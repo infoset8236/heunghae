@@ -1709,6 +1709,7 @@ html {
 
 .bookinfo_wrap .info_table_wrap table th:nth-child(2) {
     border-right: 6px solid #6B7684;
+    border-left: 6px solid #6B7684;
 }
 
 .bookinfo_wrap .info_table_wrap table th:nth-child(3) {
@@ -1716,7 +1717,15 @@ html {
 }
 
 .bookinfo_wrap .info_table_wrap table th:nth-child(4) {
-    border-radius: 0px 20px 0px 0px;
+    border-radius: 0px 24px 0px 0px;
+}
+
+.bookinfo_wrap .info_table_wrap table tbody tr:last-child td:nth-child(1) {
+    border-radius: 0px 0px 0px 24px;
+}
+
+.bookinfo_wrap .info_table_wrap table tbody tr:last-child td:nth-child(4) {
+    border-radius: 0px 0px 24px 0px;
 }
 
 .bookinfo_wrap .info_table_wrap table td {
@@ -1732,6 +1741,10 @@ html {
     text-align: center;
     font-family: Pretendard;
     font-size: 48px;
+}
+
+.bookinfo_wrap .info_table_wrap table tbody tr:last-child td {
+    border-bottom: none;
 }
 
 .bookinfo_wrap .info_table_wrap table td .icon_wrap {
@@ -2663,6 +2676,10 @@ html {
         border-radius: 25px;
     }
 
+    .overflow-y {
+        padding: 0 10px;
+    }
+
     /**************pager*****************/
     .pagination {
         padding: 16px 0 0;
@@ -3305,6 +3322,7 @@ html {
 
     .bookinfo_wrap .info_table_wrap table th:nth-child(2) {
         border-right: 3px solid #6B7684;
+        border-left: 3px solid #6B7684;
     }
 
     .bookinfo_wrap .info_table_wrap table th:nth-child(3) {
@@ -3312,7 +3330,15 @@ html {
     }
 
     .bookinfo_wrap .info_table_wrap table th:nth-child(4) {
-        border-radius: 0px 10px 0px 0px;
+        border-radius: 0px 12px 0px 0px;
+    }
+
+    .bookinfo_wrap .info_table_wrap table tbody tr:last-child td:nth-child(1) {
+        border-radius: 0px 0px 0px 12px;
+    }
+
+    .bookinfo_wrap .info_table_wrap table tbody tr:last-child td:nth-child(4) {
+        border-radius: 0px 0px 12px 0px;
     }
 
     .bookinfo_wrap .info_table_wrap table td {
