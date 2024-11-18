@@ -84,14 +84,14 @@
     font-style:normal;
     font-weight:100;
     src: local('GOTHIC'), local('GOTHIC'),
-    url(../fonts/GOTHIC.ttf) format('truetype');
+    url(../fonts/GOTHIC.TTF) format('truetype');
 }
 @font-face {
     font-family:'Century Gothic';
     font-style:normal;
     font-weight:800;
     src: local('GOTHICB'), local('GOTHICB'),
-     url(../fonts/GOTHICB.ttf) format('truetype');
+     url(../fonts/GOTHICB.TTF) format('truetype');
 }
 
 /* -------- 서울한강체 -------- */
@@ -151,12 +151,17 @@
     font-style:normal;
     font-weight:800;
     src:local('SeoulHangangEB'), local('SeoulHangangEB'),
-    url(../fonts/SeoulHangangEB.ttf) format('truetype');
+    url(../../resources/ict/fonts/SeoulHangangEB.ttf) format('truetype');
 }
 @font-face {
     font-family:'SeoulHangangCm-Black';
     font-style:normal;
     font-weight:900;
     src:local('SeoulHangangCmBL'), local('SeoulHangangCmBL'),
-    url(../fonts/SeoulHangangEB.ttf) format('truetype');
+    url(../../resources/ict/fonts/SeoulHangangEB.ttf) format('truetype');
 }
+
+
+
+
+
