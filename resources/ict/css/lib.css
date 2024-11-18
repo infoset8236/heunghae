@@ -1,0 +1,149 @@
+.lib_main_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/lib_main_bg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.lib_main_time {
+  padding: 259px 0 0 275px;
+  color: #FFF;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 136px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.lib_main_date {
+  padding: 0 0 335px 289px;
+  color: #FFF;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.lib_main_title {
+  padding: 0 0 60px 268px;
+  color: #191F28;
+  font-family: "Pretendard", sans-serif;
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -4px;
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.lib_main_title span {
+  color: #191F28;
+  font-family: "Pretendard", sans-serif;
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -4px;
+}
+
+.lib_main_caption {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 0 0 0 278px;
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (width: 1080px) {
+  .lib_main_container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/lib_main_bg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .lib_main_time {
+    padding: 130px 0 0 138px;
+    color: #FFF;
+    font-family: "Spoqa Han Sans Neo", sans-serif;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .lib_main_date {
+    padding: 0 0 168px 145px;
+    color: #FFF;
+    font-family: "Spoqa Han Sans Neo", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .lib_main_title {
+    padding: 0 0 30px 134px;
+    color: #191F28;
+    font-family: "Pretendard", sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -2px;
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .lib_main_title span {
+    color: #191F28;
+    font-family: "Pretendard", sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -2px;
+  }
+
+  .lib_main_caption {
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 0 0 139px;
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
