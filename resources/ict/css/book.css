@@ -3,6 +3,21 @@
     font-family: 'Pretendard-Regular';
 }
 
+.container {
+    position: relative;
+}
+
+.container h3 {
+    display: none;
+    /* display: block; */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+}
+
 .nav {
     position: absolute;
     z-index: 99999;
@@ -3708,6 +3723,10 @@ g text {
 @media (max-width: 1080px) {
 
     /**********************************************common1080px**********************************************/
+    .container h3 {
+        font-size: 25px;
+    }
+
     .header {
         padding: 70px 90px 55px 90px;
         width: 1080px;
