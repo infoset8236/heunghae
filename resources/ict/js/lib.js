@@ -10,4 +10,55 @@ $(document).ready(function () {
 
 	updateDateTime();
 	setInterval(updateDateTime, 60000);
+
+
+	function LibNoticeSelectedItemSwiper() {
+		const swiper = new Swiper(".lib_notice_selected_item_swiper", {
+			loop: true,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true,
+			},
+			breakpoints: {
+				2160: {
+					spaceBetween: 124
+				},
+				1080: {
+					spaceBetween: 62
+				}
+			}
+		});
+	}
+
+	LibNoticeSelectedItemSwiper();
+
+	function LibNoticeSwiper() {
+		const swiper = new Swiper(".lib_notice_swiper .swiper", {
+			loop: true,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			slidesPerView: 5,
+			breakpoints: {
+				2160: {
+					spaceBetween: 24
+				},
+				1080: {
+					spaceBetween: 62
+				}
+			},
+			pagination: {
+				el: '.lib_notice_swiper .swiper-pagination',
+				type: 'bullets',
+			},
+		});
+	}
+
+	LibNoticeSwiper()
+
 });
