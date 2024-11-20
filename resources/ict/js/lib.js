@@ -49,7 +49,7 @@ $(document).ready(function () {
 					spaceBetween: 24
 				},
 				1080: {
-					spaceBetween: 62
+					spaceBetween: 12
 				}
 			},
 			pagination: {
