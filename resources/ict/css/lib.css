@@ -207,6 +207,7 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
   opacity: 1;
   background-color: #ADB5BD;
+  margin: 0 !important;
 }
 
 .lib_notice_swiper .swiper-pagination-bullet-active {
@@ -289,7 +290,7 @@
 
   .lib_notice_swiper .swiper-pagination {
     position: absolute;
-    bottom: -26.75px !important;
+    bottom: -53.5px !important;
     left: 0;
     display: flex !important;
     justify-content: center;
@@ -302,6 +303,7 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
     opacity: 1;
     background-color: #ADB5BD;
+    margin: 0 !important;
   }
 
   .lib_notice_swiper .swiper-pagination-bullet-active {
