@@ -17,7 +17,10 @@ $(document).ready(function () {
 
 	const activeLink = localStorage.getItem('activeLink');
 	if (activeLink) {
-		$(`a[href="${activeLink}"]`).addClass('on');
+		const $activeElement = navLinks.filter(`[href="${activeLink}"]`);
+		if ($activeElement.length) {
+			$activeElement.addClass('on');
+		}
 	}
 
 	navLinks.click(function (event) {
@@ -45,7 +48,6 @@ $(function () {
 });
 
 $(function () {
-	// 게시판
 	$('.recom_tab a').click(function () {
 		var tab_id = $(this).attr('data-tab');
 
@@ -57,13 +59,66 @@ $(function () {
 	});
 });
 
-$(function () {
-	var swiper = new Swiper('.swiper-container', {
-		slidesPerView: 1,
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
+$(document).ready(function () {
+	const groupSize = 12;
+
+	$('#mn_tab10 .slider').each(function () {
+		const $tab = $(this);
+		const $lists = $tab.find('.list');
+		const $swiperWrapper = $tab.find('.swiper-wrapper');
+
+		$lists.hide();
+
+		for (let i = 0; i < $lists.length; i += groupSize) {
+			const $swiperSlide = $('<div class="swiper-slide"></div>');
+
+			$lists.slice(i, i + groupSize).each(function () {
+				$swiperSlide.append($(this).show());
+			});
+
+			$swiperWrapper.append($swiperSlide);
+		}
+
+		new Swiper($tab.find('.swiper-container')[0], {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			pagination: {
+				el: $tab.find('.swiper-pagination')[0],
+				clickable: true,
+			},
+			loop: false,
+		});
+	});
+});
+
+$(document).ready(function () {
+	const groupSize = 6;
+
+	$('#mn_tab12 .slider').each(function () {
+		const $tab = $(this);
+		const $lists = $tab.find('.list');
+		const $swiperWrapper = $tab.find('.swiper-wrapper');
+
+		$lists.hide();
+
+		for (let i = 0; i < $lists.length; i += groupSize) {
+			const $swiperSlide = $('<div class="swiper-slide"></div>');
+
+			$lists.slice(i, i + groupSize).each(function () {
+				$swiperSlide.append($(this).show());
+			});
+
+			$swiperWrapper.append($swiperSlide);
+		}
+
+		new Swiper($tab.find('.swiper-container')[0], {
+			slidesPerView: 1,
+			pagination: {
+				el: $tab.find('.swiper-pagination')[0],
+				clickable: true,
+			},
+			loop: false,
+		});
 	});
 });
 
