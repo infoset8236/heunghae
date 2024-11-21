@@ -11,9 +11,8 @@ $(document).ready(function () {
 	updateDateTime();
 	setInterval(updateDateTime, 60000);
 
-
 	function LibNoticeSelectedItemSwiper() {
-		const swiper = new Swiper(".lib_notice_selected_item_swiper", {
+		const swiper = new Swiper('.lib_notice_selected_item_swiper', {
 			loop: true,
 			autoplay: {
 				delay: 10000,
@@ -25,19 +24,19 @@ $(document).ready(function () {
 			},
 			breakpoints: {
 				2160: {
-					spaceBetween: 124
+					spaceBetween: 124,
 				},
 				1080: {
-					spaceBetween: 62
-				}
-			}
+					spaceBetween: 62,
+				},
+			},
 		});
 	}
 
 	LibNoticeSelectedItemSwiper();
 
 	function LibNoticeSwiper() {
-		const swiper = new Swiper(".lib_notice_swiper .swiper", {
+		const swiper = new Swiper('.lib_notice_swiper .swiper', {
 			loop: true,
 			autoplay: {
 				delay: 10000,
@@ -46,11 +45,11 @@ $(document).ready(function () {
 			slidesPerView: 5,
 			breakpoints: {
 				2160: {
-					spaceBetween: 24
+					spaceBetween: 24,
 				},
 				1080: {
-					spaceBetween: 12
-				}
+					spaceBetween: 12,
+				},
 			},
 			pagination: {
 				el: '.lib_notice_swiper .swiper-pagination',
@@ -59,6 +58,47 @@ $(document).ready(function () {
 		});
 	}
 
-	LibNoticeSwiper()
+	LibNoticeSwiper();
 
+	function LibNewSelectedItemSwiper() {
+		const swiper = new Swiper('.lib_new_selected_item_swiper', {
+			loop: true,
+			autoplay: {
+				delay: 9900,
+				disableOnInteraction: false,
+			},
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true,
+			},
+			pagination: {
+				el: '.lib_new_content .swiper-pagination',
+				type: 'bullets',
+			},
+		});
+	}
+
+	LibNewSelectedItemSwiper();
+
+	function LibNewSwiper() {
+		const swiper = new Swiper('.lib_new_swiper', {
+			loop: true,
+			direction: 'vertical',
+			slidesPerView: 6,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				2160: {
+					spaceBetween: 146,
+				},
+				1080: {
+					spaceBetween: 73,
+				},
+			},
+		});
+	}
+
+	LibNewSwiper();
 });

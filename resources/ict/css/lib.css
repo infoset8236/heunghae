@@ -8,58 +8,58 @@
 }
 
 .lib_main_time {
-  padding: 259px 0 0 275px;
-  color: #FFF;
   font-family: "Spoqa Han Sans Neo", sans-serif;
   font-size: 136px;
-  font-style: normal;
   font-weight: 300;
+  font-style: normal;
   line-height: normal;
+  padding: 259px 0 0 275px;
+  color: #FFF;
 }
 
 .lib_main_date {
-  padding: 0 0 335px 289px;
-  color: #FFF;
   font-family: "Spoqa Han Sans Neo", sans-serif;
   font-size: 36px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   line-height: normal;
+  padding: 0 0 335px 289px;
+  color: #FFF;
 }
 
 .lib_main_title {
-  padding: 0 0 60px 268px;
-  color: #191F28;
   font-family: "Pretendard", sans-serif;
   font-size: 160px;
-  font-style: normal;
   font-weight: 300;
+  font-style: normal;
   line-height: normal;
-  letter-spacing: -4px;
+  padding: 0 0 60px 268px;
   animation: slideUp 0.8s ease-out forwards;
+  letter-spacing: -4px;
+  color: #191F28;
 }
 
 .lib_main_title span {
-  color: #191F28;
   font-family: "Pretendard", sans-serif;
   font-size: 160px;
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
   line-height: normal;
   letter-spacing: -4px;
+  color: #191F28;
 }
 
 .lib_main_caption {
-  color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: 40px;
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
   line-height: 120%;
-  letter-spacing: 4px;
-  text-transform: uppercase;
   padding: 0 0 0 278px;
   animation: slideUp 0.8s ease-out forwards;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FFF;
 }
 
 @keyframes slideUp {
@@ -83,58 +83,58 @@
   }
 
   .lib_main_time {
-    padding: 130px 0 0 138px;
-    color: #FFF;
     font-family: "Spoqa Han Sans Neo", sans-serif;
     font-size: 68px;
-    font-style: normal;
     font-weight: 300;
+    font-style: normal;
     line-height: normal;
+    padding: 130px 0 0 138px;
+    color: #FFF;
   }
 
   .lib_main_date {
-    padding: 0 0 168px 145px;
-    color: #FFF;
     font-family: "Spoqa Han Sans Neo", sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
+    font-style: normal;
     line-height: normal;
+    padding: 0 0 168px 145px;
+    color: #FFF;
   }
 
   .lib_main_title {
-    padding: 0 0 30px 134px;
-    color: #191F28;
     font-family: "Pretendard", sans-serif;
     font-size: 80px;
-    font-style: normal;
     font-weight: 300;
+    font-style: normal;
     line-height: normal;
-    letter-spacing: -2px;
+    padding: 0 0 30px 134px;
     animation: slideUp 0.8s ease-out forwards;
+    letter-spacing: -2px;
+    color: #191F28;
   }
 
   .lib_main_title span {
-    color: #191F28;
     font-family: "Pretendard", sans-serif;
     font-size: 80px;
-    font-style: normal;
     font-weight: 500;
+    font-style: normal;
     line-height: normal;
     letter-spacing: -2px;
+    color: #191F28;
   }
 
   .lib_main_caption {
-    color: #FFF;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
+    font-style: normal;
     line-height: 120%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
     padding: 0 0 0 139px;
     animation: slideUp 0.8s ease-out forwards;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFF;
   }
 
   @keyframes slideUp {
@@ -149,14 +149,14 @@
   }
 }
 
-/* 라이브러리보드 메인 */
+/* 라이브러리보드 공지사항 */
 .lib_notice_container {
   position: relative;
   width: 100%;
   height: 100vh;
+  padding-top: 240px;
   background: url(../img/lib_notice_bg.svg) no-repeat top center;
   background-size: cover;
-  padding-top: 240px;
 }
 
 .lib_notice_selected_item_swiper {
@@ -169,9 +169,9 @@
 .lib_notice_selected_item_swiper .swiper-slide img {
   width: 1741px;
   height: 2462px;
-  object-fit: cover;
-  box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.10);
   border-radius: 20px;
+  box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.10);
+  object-fit: cover;
 }
 
 .lib_notice_swiper {
@@ -188,8 +188,8 @@
 .lib_notice_swiper .swiper img {
   width: 248px;
   height: 351px;
-  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.10);
   border-radius: 20px;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.10);
 }
 
 .lib_notice_swiper .swiper-pagination {
@@ -204,10 +204,10 @@
 .lib_notice_swiper .swiper-pagination-bullet {
   width: 24px;
   height: 24px;
+  margin: 0 !important;
   transition: background-color 0.3s ease, transform 0.3s ease;
   opacity: 1;
   background-color: #ADB5BD;
-  margin: 0 !important;
 }
 
 .lib_notice_swiper .swiper-pagination-bullet-active {
@@ -218,22 +218,22 @@
   position: fixed;
   bottom: 0;
   left: 0;
+  height: 128px;
   padding: 38px 0 38px 120px;
   background: #000;
-  height: 128px;
 }
 
 .lib_notice_ticker_message {
-  color: #FFF;
   font-family: "Pretendard", sans-serif;
   font-size: 44px;
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
   line-height: normal;
   overflow: hidden;
-  white-space: nowrap;
   width: 100%;
   animation: ticker 50s linear infinite;
+  white-space: nowrap;
+  color: #FFF;
 }
 
 @keyframes ticker {
@@ -250,9 +250,9 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    padding-top: 120px;
     background: url(../img/lib_notice_bg.svg) no-repeat top center;
     background-size: cover;
-    padding-top: 120px;
   }
 
   .lib_notice_selected_item_swiper {
@@ -265,9 +265,9 @@
   .lib_notice_selected_item_swiper .swiper-slide img {
     width: 871px;
     height: 1231px;
-    object-fit: cover;
-    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.10);
     border-radius: 10px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.10);
+    object-fit: cover;
   }
 
   .lib_notice_swiper {
@@ -284,8 +284,8 @@
   .lib_notice_swiper .swiper img {
     width: 124px;
     height: 176px;
-    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.10);
     border-radius: 10px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.10);
   }
 
   .lib_notice_swiper .swiper-pagination {
@@ -300,10 +300,10 @@
   .lib_notice_swiper .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
+    margin: 0 !important;
     transition: background-color 0.3s ease, transform 0.3s ease;
     opacity: 1;
     background-color: #ADB5BD;
-    margin: 0 !important;
   }
 
   .lib_notice_swiper .swiper-pagination-bullet-active {
@@ -314,22 +314,22 @@
     position: fixed;
     bottom: 0;
     left: 0;
+    height: 64px;
     padding: 19px 0 19px 60px;
     background: #000;
-    height: 64px;
   }
 
   .lib_notice_ticker_message {
-    color: #FFF;
     font-family: "Pretendard", sans-serif;
     font-size: 22px;
-    font-style: normal;
     font-weight: 500;
+    font-style: normal;
     line-height: normal;
     overflow: hidden;
-    white-space: nowrap;
     width: 100%;
     animation: ticker 50s linear infinite;
+    white-space: nowrap;
+    color: #FFF;
   }
 
   @keyframes ticker {
@@ -339,5 +339,262 @@
     100% {
       transform: translateX(-100%);
     }
+  }
+}
+
+/* 라이브러리보드 신착도서 */
+.lib_new_container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 440px;
+  background: url(../img/lib_new_bg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.lib_new_content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 1790px;
+  height: 2914px;
+  margin-left: 200px;
+}
+
+.lib_new_selected_item_swiper {
+  width: 1360px;
+  height: 2914px;
+  margin: 0 !important;
+}
+
+.lib_new_content .swiper-pagination {
+  position: absolute;
+  bottom: -226px !important;
+  display: flex !important;
+  justify-content: center;
+  margin-right: 30px;
+  gap: 40px;
+}
+
+.lib_new_content .swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  margin: 0 !important;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  background-color: #ADB5BD;
+}
+
+.lib_new_content .swiper-pagination-bullet-active {
+  background-color: #333D4B;
+}
+
+.lib_new_selected_item_swiper .swiper-slide img {
+  width: 1260px;
+  height: 1864px;
+  border-radius: 24px;
+  box-shadow: 40px 40px 80px 0 rgba(154, 196, 224, 0.50);
+  object-fit: cover;
+}
+
+.lib_new_writer {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  overflow: hidden;
+  width: 1260px;
+  margin-top: 192px;
+  margin-bottom: 60px;
+  white-space: nowrap;
+  letter-spacing: -1.5px;
+  text-overflow: ellipsis;
+  color: #4E5968;
+}
+
+.lib_new_writer span {
+  color: #191F28;
+}
+
+.lib_new_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  display: -webkit-box;
+  overflow: hidden;
+  width: 1260px;
+  margin-bottom: 60px;
+  letter-spacing: -3px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.lib_new_summary {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 150%;
+  display: -webkit-box;
+  overflow: hidden;
+  width: 1260px;
+  letter-spacing: -1.5px;
+  text-overflow: ellipsis;
+  color: #191F28;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.lib_new_swiper {
+  width: 280px;
+  height: 2900px;
+  margin: 0 0 0 160px!important;
+  padding-bottom: 20px !important;
+}
+
+.lib_new_swiper .swiper-wrapper {
+  width: 250px !important;
+}
+
+.lib_new_swiper .swiper-slide {
+  width: 250px !important;
+}
+
+.lib_new_swiper .swiper-slide img {
+  width: 250px;
+  height: 360px;
+  border-radius: 16px;
+  box-shadow: 10px 10px 20px 0 rgba(154, 196, 224, 0.40);
+}
+
+@media (width: 1080px) {
+  .lib_new_container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 220px;
+    background: url(../img/lib_new_bg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .lib_new_content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 895px;
+    height: 1457px;
+    margin-left: 100px;
+  }
+
+  .lib_new_selected_item_swiper {
+    width: 680px;
+    height: 1457px;
+    margin: 0 !important;
+  }
+
+  .lib_new_content .swiper-pagination {
+    position: absolute;
+    bottom: -113px !important;
+    display: flex !important;
+    justify-content: center;
+    margin-right: 15px;
+    gap: 20px;
+  }
+
+  .lib_new_content .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    background-color: #ADB5BD;
+  }
+
+  .lib_new_content .swiper-pagination-bullet-active {
+    background-color: #333D4B;
+  }
+
+  .lib_new_selected_item_swiper .swiper-slide img {
+    width: 630px;
+    height: 932px;
+    border-radius: 12px;
+    box-shadow: 20px 20px 40px 0 rgba(154, 196, 224, 0.50);
+    object-fit: cover;
+  }
+
+  .lib_new_writer {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    overflow: hidden;
+    width: 630px;
+    margin-top: 96px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    letter-spacing: -0.75px;
+    text-overflow: ellipsis;
+    color: #4E5968;
+  }
+
+  .lib_new_writer span {
+    color: #191F28;
+  }
+
+  .lib_new_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    display: -webkit-box;
+    overflow: hidden;
+    width: 630px;
+    margin-bottom: 30px;
+    letter-spacing: -1.5px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .lib_new_summary {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 150%;
+    display: -webkit-box;
+    overflow: hidden;
+    width: 630px;
+    letter-spacing: -0.75px;
+    text-overflow: ellipsis;
+    color: #191F28;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+
+  .lib_new_swiper {
+    width: 140px;
+    height: 1450px;
+    margin: 0 0 0 80px!important;
+    padding-bottom: 10px !important;
+  }
+
+  .lib_new_swiper .swiper-wrapper {
+    width: 125px !important;
+  }
+
+  .lib_new_swiper .swiper-slide {
+    width: 125px !important;
+  }
+
+  .lib_new_swiper .swiper-slide img {
+    width: 125px;
+    height: 180px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 0 rgba(154, 196, 224, 0.40);
   }
 }
