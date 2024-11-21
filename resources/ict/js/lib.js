@@ -101,4 +101,24 @@ $(document).ready(function () {
 	}
 
 	LibNewSwiper();
+
+	function LibEventSwiper() {
+		const swiper = new Swiper('.lib_event_swiper .swiper', {
+			loop: true,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true,
+			},
+			pagination: {
+				el: '.lib_event_swiper .swiper-pagination',
+				type: 'bullets',
+			},
+		});
+	}
+
+	LibEventSwiper();
 });
