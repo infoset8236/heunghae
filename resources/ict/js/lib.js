@@ -6,6 +6,7 @@ $(document).ready(function () {
 
 		$('.lib_main_time').text(formattedTime);
 		$('.lib_main_date').text(formattedDate);
+		$('.lib_living_date').text(formattedDate);
 	}
 
 	updateDateTime();
@@ -151,4 +152,26 @@ $(document).ready(function () {
 	}
 
 	LibBestSwiper();
+
+	function LibNewsSwiper() {
+		const swiper = new Swiper('.lib_living_news_list_swiper', {
+			loop: true,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				2160: {
+					spaceBetween: 24,
+				},
+				1080: {
+					spaceBetween: 12,
+				},
+			},
+			direction: 'vertical',
+			slidesPerView: 3,
+		});
+	}
+
+	LibNewsSwiper();
 });

@@ -1095,3 +1095,504 @@
     background-color: #000;
   }
 }
+
+/* 라이브러리보드 생활정보 */
+.lib_living_container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 440px;
+  padding-left: 200px;
+  background: url(../img/lib_living_bg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.lib_date_wrapper {
+  display: flex;
+  margin-bottom: 60px;
+  gap: 52px;
+}
+
+.lib_living_date {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  color: #DBE2E9;
+}
+
+.lib_living_weather {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  color: #191F28;
+}
+
+.lib_living_temperature_wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.lib_living_temperature {
+  font-family: "Roboto", sans-serif;
+  font-size: 340px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 340px;
+  width: 723px;
+  height: 320px;
+  letter-spacing: -13.6px;
+  color: #191F28;
+}
+
+.lib_living_temperature_wrapper img {
+  width: 240px;
+  height: 240px;
+}
+
+.lib_living_perceived_temperature {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 120px;
+  padding-left: 20px;
+  color: #DBE2E9;
+}
+
+.lib_living_perceived_temperature span {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  margin-left: 52px;
+  color: #DBE2E9;
+}
+
+.lib_living_detail {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  height: 140px;
+  margin-bottom: 24px;
+  padding: 34px 80px;
+  border-radius: 100px;
+  background: rgba(17, 17, 17, 0.20);
+}
+
+.lib_living_label {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  color: #333D4B;
+  gap: 24px;
+}
+
+.lib_living_label img {
+  width: 60px;
+  height: 60px;
+}
+
+.lib_living_value {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #FFF;
+}
+
+.lib_living_weather_list {
+  display: flex;
+  width: 1760px;
+  height: 600px;
+  margin-top: 752px;
+  padding: 114px 146px 115px 146px;
+  border-radius: 80px;
+  background: rgba(0, 0, 0, 0.60);
+  gap: 140px;
+}
+
+.lib_living_weather_list_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 180px;
+  height: 371px;
+}
+
+.lib_living_weather_list_date {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ADB5BD;
+}
+
+.lib_living_weather_list_item img {
+  width: 180px;
+  height: 180px;
+}
+
+.lib_living_weather_list_temperature {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 24px;
+  text-align: center;
+  color: #FFF;
+}
+
+.lib_living_news_list {
+  width: 1760px;
+  height: 765px;
+  margin-top: 20px;
+  padding: 80px 100px;
+  border-radius: 80px;
+  background: rgba(0, 0, 0, 0.40);
+  backdrop-filter: blur(40px);
+}
+
+.lib_living_news_list_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.lib_living_news_list_title div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  width: 231px;
+  height: 97px;
+  padding: 20px 48px;
+  letter-spacing: -1.2px;
+  color: #FFF;
+  border-radius: 24px;
+  background: #333D4B;
+}
+
+.lib_living_news_list_title img {
+  width: 232px;
+  height: 70px;
+}
+
+.lib_living_news_list_swiper {
+  width: 1560px;
+  height: 468px;
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.lib_living_news_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.lib_living_news_dot {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  width: 52px;
+  height: 84px;
+  letter-spacing: -1.5px;
+  color: #FFF;
+}
+
+.lib_living_news_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  overflow: hidden;
+  width: 1500px;
+  white-space: nowrap;
+  letter-spacing: -1.5px;
+  text-overflow: ellipsis;
+  color: #FFF;
+}
+
+.lib_living_news_date {
+  font-family: "Pretendard", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%;
+  letter-spacing: -1px;
+  color: #ADB5BD;
+}
+
+@media (width: 1080px) {
+  .lib_living_container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 220px;
+    padding-left: 100px;
+    background: url(../img/lib_living_bg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .lib_date_wrapper {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 26px;
+  }
+
+  .lib_living_date {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    color: #DBE2E9;
+  }
+
+  .lib_living_weather {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    color: #191F28;
+  }
+
+  .lib_living_temperature_wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 12px;
+  }
+
+  .lib_living_temperature {
+    font-family: "Roboto", sans-serif;
+    font-size: 170px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 170px;
+    width: 362px;
+    height: 160px;
+    letter-spacing: -6.8px;
+    color: #191F28;
+  }
+
+  .lib_living_temperature_wrapper img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .lib_living_perceived_temperature {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 60px;
+    padding-left: 10px;
+    color: #DBE2E9;
+  }
+
+  .lib_living_perceived_temperature span {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 26px;
+    color: #DBE2E9;
+  }
+
+  .lib_living_detail {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 70px;
+    margin-bottom: 12px;
+    padding: 17px 40px;
+    border-radius: 50px;
+    background: rgba(17, 17, 17, 0.20);
+  }
+
+  .lib_living_label {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    color: #333D4B;
+    gap: 12px;
+  }
+
+  .lib_living_label img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .lib_living_value {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #FFF;
+  }
+
+  .lib_living_weather_list {
+    display: flex;
+    width: 880px;
+    height: 300px;
+    margin-top: 376px;
+    padding: 57px 73px 58px 73px;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.60);
+    gap: 70px;
+  }
+
+  .lib_living_weather_list_item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90px;
+    height: 186px;
+  }
+
+  .lib_living_weather_list_date {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ADB5BD;
+  }
+
+  .lib_living_weather_list_item img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .lib_living_weather_list_temperature {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 12px;
+    text-align: center;
+    color: #FFF;
+  }
+
+  .lib_living_news_list {
+    width: 880px;
+    height: 383px;
+    margin-top: 10px;
+    padding: 40px 50px;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(20px);
+  }
+
+  .lib_living_news_list_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .lib_living_news_list_title div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    width: 116px;
+    height: 49px;
+    padding: 10px 24px;
+    letter-spacing: -0.6px;
+    color: #FFF;
+    border-radius: 12px;
+    background: #333D4B;
+  }
+
+  .lib_living_news_list_title img {
+    width: 116px;
+    height: 35px;
+  }
+
+  .lib_living_news_list_swiper {
+    width: 780px;
+    height: 234px;
+  }
+
+  .swiper-slide {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .lib_living_news_content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lib_living_news_dot {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    width: 26px;
+    height: 42px;
+    letter-spacing: -0.6px;
+    color: #FFF;
+  }
+
+  .lib_living_news_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    overflow: hidden;
+    width: 750px;
+    white-space: nowrap;
+    letter-spacing: -0.6px;
+    text-overflow: ellipsis;
+    color: #FFF;
+  }
+
+  .lib_living_news_date {
+    font-family: "Pretendard", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #ADB5BD;
+  }
+}
