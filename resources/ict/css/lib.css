@@ -601,6 +601,191 @@
   }
 }
 
+/* 라이브러리보드 인기도서 */
+.lib_best_container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 440px;
+  padding-left: 200px;
+  background: url(../img/lib_best_bg.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.lib_best_swiper {
+  position: relative;
+  width: 1760px;
+  height: 2904px;
+}
+
+.lib_best_swiper .swiper {
+  width: 1860px;
+  height: 2904px;
+}
+
+.lib_best_swiper .swiper-pagination {
+  position: absolute;
+  bottom: -236px !important;
+  display: flex !important;
+  justify-content: center;
+  gap: 40px;
+}
+
+.lib_best_swiper .swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  margin: 0 !important;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  background-color: #ADB5BD;
+}
+
+.lib_best_swiper .swiper-pagination-bullet-active {
+  background-color: #333D4B;
+}
+
+.lib_best_swiper .swiper-slide img {
+  width: 440px;
+  height: 634px;
+  border-radius: 24px;
+  box-shadow: 20px 20px 40px 0 rgba(154, 196, 224, 0.40);
+}
+
+.lib_best_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  overflow: hidden;
+  width: 440px;
+  margin-top: 40px;
+  margin-bottom: 8px;
+  padding: 0 8px 0 8px;
+  white-space: nowrap;
+  letter-spacing: -1.5px;
+  text-overflow: ellipsis;
+  color: #191F28;
+}
+
+.lib_best_writer {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: normal;
+  overflow: hidden;
+  width: 440px;
+  margin-bottom: 8px;
+  padding: 0 8px 0 8px;
+  white-space: nowrap;
+  letter-spacing: -1.2px;
+  text-overflow: ellipsis;
+  color: #4E5968;
+}
+
+.lib_best_year {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  padding: 0 8px 0 8px;
+  letter-spacing: -1.2px;
+  color: #4E5968;
+}
+
+@media (width: 1080px) {
+  .lib_best_container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 220px;
+    padding-left: 100px;
+    background: url(../img/lib_best_bg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .lib_best_swiper {
+    position: relative;
+    width: 880px;
+    height: 1452px;
+  }
+
+  .lib_best_swiper .swiper {
+    width: 930px;
+    height: 1452px;
+  }
+
+  .lib_best_swiper .swiper-pagination {
+    position: absolute;
+    bottom: -118px !important;
+    display: flex !important;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .lib_best_swiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    background-color: #ADB5BD;
+  }
+
+  .lib_best_swiper .swiper-pagination-bullet-active {
+    background-color: #333D4B;
+  }
+
+  .lib_best_swiper .swiper-slide img {
+    width: 220px;
+    height: 317px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 20px 0 rgba(154, 196, 224, 0.40);
+  }
+
+  .lib_best_title {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    overflow: hidden;
+    width: 220px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    padding: 0 4px 0 4px;
+    white-space: nowrap;
+    letter-spacing: -0.75px;
+    text-overflow: ellipsis;
+    color: #191F28;
+  }
+
+  .lib_best_writer {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    overflow: hidden;
+    width: 220px;
+    margin-bottom: 4px;
+    padding: 0 4px 0 4px;
+    white-space: nowrap;
+    letter-spacing: -0.6px;
+    text-overflow: ellipsis;
+    color: #4E5968;
+  }
+
+  .lib_best_year {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    padding: 0 4px 0 4px;
+    letter-spacing: -0.6px;
+    color: #4E5968;
+  }
+}
+
 /* 라이브러리보드 행사안내 */
 .lib_event_container {
   display: flex;

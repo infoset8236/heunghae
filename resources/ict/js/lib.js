@@ -121,4 +121,34 @@ $(document).ready(function () {
 	}
 
 	LibEventSwiper();
+
+	function LibBestSwiper() {
+		const swiper = new Swiper('.lib_best_swiper .swiper', {
+			loop: true,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			slidesPerView: 3,
+			slidesPerColumn: 3,
+			grid: {
+				rows: 3,
+			},
+			slidesPerGroup: 3,
+			pagination: {
+				el: '.lib_best_swiper .swiper-pagination',
+				type: 'bullets',
+			},
+			breakpoints: {
+				2160: {
+					spaceBetween: 120,
+				},
+				1080: {
+					spaceBetween: 60,
+				},
+			},
+		});
+	}
+
+	LibBestSwiper();
 });
