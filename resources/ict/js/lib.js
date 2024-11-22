@@ -123,8 +123,8 @@ $(document).ready(function () {
 
 	LibEventSwiper();
 
-	function LibBestSwiper() {
-		const swiper = new Swiper('.lib_best_swiper .swiper', {
+	function LibLibrarianSwiper() {
+		const swiper = new Swiper('.lib_librarian_swiper .swiper', {
 			loop: true,
 			autoplay: {
 				delay: 10000,
@@ -137,7 +137,7 @@ $(document).ready(function () {
 			},
 			slidesPerGroup: 3,
 			pagination: {
-				el: '.lib_best_swiper .swiper-pagination',
+				el: '.lib_librarian_swiper .swiper-pagination',
 				type: 'bullets',
 			},
 			breakpoints: {
@@ -151,27 +151,21 @@ $(document).ready(function () {
 		});
 	}
 
-	LibBestSwiper();
+	LibLibrarianSwiper();
 
-	function LibNewsSwiper() {
-		const swiper = new Swiper('.lib_living_news_list_swiper', {
+	function LibBestSwiper() {
+		const swiper = new Swiper('.lib_best_container .swiper', {
 			loop: true,
-			autoplay: {
-				delay: 10000,
-				disableOnInteraction: false,
+			// autoplay: {
+			// 	delay: 10000,
+			// 	disableOnInteraction: false,
+			// },
+			pagination: {
+				el: '.lib_best_container .swiper-pagination',
+				type: 'bullets',
 			},
-			breakpoints: {
-				2160: {
-					spaceBetween: 24,
-				},
-				1080: {
-					spaceBetween: 12,
-				},
-			},
-			direction: 'vertical',
-			slidesPerView: 3,
 		});
 	}
 
-	LibNewsSwiper();
+	LibBestSwiper();
 });
