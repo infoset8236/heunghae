@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 /* 라이브러리보드 메인 */
 .lib_main_container {
@@ -344,13 +345,371 @@
   }
 }
 
-/* 라이브러리보드 신착도서 */
-.lib_information_container {
+/* 라이브러리보드 시설안내 */
+.lib_facility_container {
   width: 100%;
   height: 100vh;
-  padding-top: 440px;
-  background: url(../img/lib_information_bg.svg) no-repeat top center;
+  padding-top: 487px;
+  background: url(../img/lib_facility_bg.svg) no-repeat top center;
   background-size: cover;
+}
+
+.lib_facility_map {
+  position: relative;
+  width: 1800px;
+  height: 1036px;
+  margin-left: 180px;
+}
+
+.lib_facility_map img {
+  width: 1800px;
+  height: 1036px;
+  object-fit: contain;
+}
+
+.lib_facility_map div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 293px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  position: absolute;
+  bottom: -187px;
+  left:37px;
+  color: #191F28;
+}
+
+.lib_facility_switch_list {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 210px;
+  margin-right: 230px;
+  gap: 24px;
+}
+
+.lib_facility_switch {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  padding: 61px 64px 62px 63px;
+  text-align: center;
+  color: #191F28;
+  border-radius: 8px;
+  background: #D9D9D9;
+}
+
+.lib_facility_switch.active {
+  color: #FFF;
+  background: #309BDF;
+}
+
+.lib_facility_swiper {
+  position: relative;
+  width: 2160px;
+  height: 1382px;
+}
+
+.lib_facility_swiper .swiper {
+  width: 1700px;
+  height: 1382px;
+}
+
+.lib_facility_swiper .swiper-slide {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.lib_facility_swiper .swiper-pagination {
+  position: absolute;
+  bottom: -258px !important;
+  display: flex !important;
+  justify-content: center;
+  gap: 40px;
+}
+
+.lib_facility_swiper .swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  margin: 0 !important;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  background-color: #ADB5BD;
+}
+
+.lib_facility_swiper .swiper-pagination-bullet-active {
+  background-color: #333D4B;
+}
+
+.lib_facility_header {
+  display: flex;
+  align-items: center;
+  margin-top: 27px;
+  gap: 24px;
+}
+
+.lib_facility_header_index {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 140px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 164px;
+  width: 124px;
+  height: 164px;
+  color: #8B95A1;
+}
+
+.lib_facility_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.lib_facility_title_kr {
+  font-family: "Pretendard", sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  color: #191F28;
+}
+
+.lib_facility_title_en {
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #6B7684;
+}
+
+.lib_facility_img {
+  width: 1700px;
+  height: 303px;
+  margin-top: 34px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.lib_facility_list {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+.lib_facility_list_item {
+  display: flex;
+  gap:32px;
+}
+
+.lib_facility_list_item img {
+  width: 68px;
+  height: 68px;
+  margin-top: 8px;
+  margin-left: 1px;
+}
+
+.lib_facility_list_item div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  width: 1600px;
+  letter-spacing: -1.5px;
+  color: #191F28;
+}
+
+@media (width: 1080px) {
+  .lib_facility_container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 244px;
+    background: url(../img/lib_facility_bg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
+  .lib_facility_map {
+    position: relative;
+    width: 900px;
+    height: 518px;
+    margin-left: 90px;
+  }
+
+  .lib_facility_map img {
+    width: 900px;
+    height: 518px;
+    object-fit: contain;
+  }
+
+  .lib_facility_map div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 147px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+    position: absolute;
+    bottom: -93.5px;
+    left:19px;
+    color: #191F28;
+  }
+
+  .lib_facility_switch_list {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 105px;
+    margin-right: 115px;
+    gap: 12px;
+  }
+
+  .lib_facility_switch {
+    font-family: "Pretendard", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    padding: 31px 32px 31px 32px;
+    text-align: center;
+    color: #191F28;
+    border-radius: 3px;
+    background: #D9D9D9;
+  }
+
+  .lib_facility_switch.active {
+    color: #FFF;
+    background: #309BDF;
+  }
+
+  .lib_facility_swiper {
+    position: relative;
+    width: 1080px;
+    height: 691px;
+  }
+
+  .lib_facility_swiper .swiper {
+    width: 850px;
+    height: 691px;
+  }
+
+  .lib_facility_swiper .swiper-slide {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .lib_facility_swiper .swiper-pagination {
+    position: absolute;
+    bottom: -129px !important;
+    display: flex !important;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .lib_facility_swiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    background-color: #ADB5BD;
+  }
+
+  .lib_facility_swiper .swiper-pagination-bullet-active {
+    background-color: #333D4B;
+  }
+
+  .lib_facility_header {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    gap: 12px;
+  }
+
+  .lib_facility_header_index {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 82px;
+    width: 62px;
+    height: 82px;
+    color: #8B95A1;
+  }
+
+  .lib_facility_title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lib_facility_title_kr {
+    font-family: "Pretendard", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    color: #191F28;
+  }
+
+  .lib_facility_title_en {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #6B7684;
+  }
+
+  .lib_facility_img {
+    width: 850px;
+    height: 152px;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .lib_facility_list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 10px;
+  }
+
+  .lib_facility_list_item {
+    display: flex;
+    gap:16px;
+  }
+
+  .lib_facility_list_item img {
+    width: 34px;
+    height: 34px;
+    margin-top: 4px;
+    margin-left: 1px;
+  }
+
+  .lib_facility_list_item div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    width: 800px;
+    letter-spacing: -0.75px;
+    color: #191F28;
+  }
 }
 
 /* 라이브러리보드 신착도서 */
