@@ -162,6 +162,35 @@
   background-size: cover;
 }
 
+.lib_notice_nodata_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 2160px;
+  height: 924px;
+  padding-top: 1128px;
+  padding-left: 650px;
+}
+
+.lib_notice_nodata_wrapper img {
+  width: 800px;
+  height: 800px;
+}
+
+.lib_notice_nodata_wrapper div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 130%;
+  position: absolute;
+  bottom: -400px;
+  left: 670px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #191F28;
+}
+
 .lib_notice_selected_item_swiper {
   width: 1941px;
   height: 2762px;
@@ -256,6 +285,35 @@
     padding-top: 120px;
     background: url(../img/lib_notice_bg.svg) no-repeat top center;
     background-size: cover;
+  }
+
+  .lib_notice_nodata_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1080px;
+    height: 462px;
+    padding-top: 564px;
+    padding-left: 325px;
+  }
+
+  .lib_notice_nodata_wrapper img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .lib_notice_nodata_wrapper div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 130%;
+    position: absolute;
+    bottom: -200px;
+    left: 335px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #191F28;
   }
 
   .lib_notice_selected_item_swiper {
@@ -721,6 +779,35 @@
   background-size: cover;
 }
 
+.lib_new_nodata_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 2160px;
+  height: 924px;
+  padding-top: 1128px;
+  padding-left: 690px;
+}
+
+.lib_new_nodata_wrapper img {
+  width: 800px;
+  height: 800px;
+}
+
+.lib_new_nodata_wrapper div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 130%;
+  position: absolute;
+  bottom: -400px;
+  left: 730px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #191F28;
+}
+
 .lib_new_content {
   position: relative;
   display: flex;
@@ -847,6 +934,35 @@
     padding-top: 220px;
     background: url(../img/lib_new_bg.svg) no-repeat top center;
     background-size: cover;
+  }
+
+  .lib_new_nodata_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1080px;
+    height: 462px;
+    padding-top: 564px;
+    padding-left: 345px;
+  }
+
+  .lib_new_nodata_wrapper img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .lib_new_nodata_wrapper div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 130%;
+    position: absolute;
+    bottom: -200px;
+    left: 365px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #191F28;
   }
 
   .lib_new_content {
@@ -976,6 +1092,35 @@
   padding-top: 439px;
   background: url(../img/lib_best_bg.svg) no-repeat top center;
   background-size: cover;
+}
+
+.lib_best_nodata_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 2160px;
+  height: 924px;
+  padding-top: 1128px;
+  padding-left: 690px;
+}
+
+.lib_best_nodata_wrapper img {
+  width: 800px;
+  height: 800px;
+}
+
+.lib_best_nodata_wrapper div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 130%;
+  position: absolute;
+  bottom: -400px;
+  left: 730px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #191F28;
 }
 
 .lib_best_swiper {
@@ -1204,6 +1349,35 @@
     padding-top: 220px;
     background: url(../img/lib_best_bg.svg) no-repeat top center;
     background-size: cover;
+  }
+
+  .lib_best_nodata_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1080px;
+    height: 462px;
+    padding-top: 564px;
+    padding-left: 345px;
+  }
+
+  .lib_best_nodata_wrapper img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .lib_best_nodata_wrapper div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 130%;
+    position: absolute;
+    bottom: -200px;
+    left: 365px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #191F28;
   }
 
   .lib_best_swiper {
@@ -1436,6 +1610,35 @@
   background-size: cover;
 }
 
+.lib_librarian_nodata_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 2160px;
+  height: 924px;
+  padding-top: 1128px;
+  padding-left: 490px;
+}
+
+.lib_librarian_nodata_wrapper img {
+  width: 800px;
+  height: 800px;
+}
+
+.lib_librarian_nodata_wrapper div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 130%;
+  position: absolute;
+  bottom: -400px;
+  left: 530px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #191F28;
+}
+
 .lib_librarian_swiper {
   position: relative;
   width: 1760px;
@@ -1527,6 +1730,36 @@
     background: url(../img/lib_librarian_bg.svg) no-repeat top center;
     background-size: cover;
   }
+
+  .lib_librarian_nodata_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1080px;
+    height: 462px;
+    padding-top: 564px;
+    padding-left: 245px;
+  }
+
+  .lib_librarian_nodata_wrapper img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .lib_librarian_nodata_wrapper div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 130%;
+    position: absolute;
+    bottom: -200px;
+    left: 265px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #191F28;
+  }
+
 
   .lib_librarian_swiper {
     position: relative;
@@ -2180,7 +2413,7 @@
   height: 468px;
 }
 
-.swiper-slide {
+.lib_living_news_list_swiper .swiper-slide {
   display: flex !important;
   align-items: flex-start;
   gap: 8px;
@@ -2430,7 +2663,7 @@
     height: 234px;
   }
 
-  .swiper-slide {
+  .lib_living_news_list_swiper .swiper-slide {
     display: flex !important;
     align-items: flex-start;
     gap: 4px;
