@@ -491,7 +491,7 @@ $(document).ready(function () {
 		$('.lib_facility_switch').removeClass('active');
 		$('.lib_facility_switch').eq(currentIndex).addClass('active');
 
-		const $swiperWrapper = $('.swiper-wrapper');
+		const $swiperWrapper = $('.lib_facility_swiper .swiper-wrapper');
 		$swiperWrapper.empty();
 
 		currentFloor.slides.forEach(slide => {

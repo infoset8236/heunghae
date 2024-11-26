@@ -1623,6 +1623,34 @@
   background-size: cover;
 }
 
+.lib_event_nodata_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 2160px;
+  height: 924px;
+  padding-left: 460px;
+}
+
+.lib_event_nodata_wrapper img {
+  width: 800px;
+  height: 800px;
+}
+
+.lib_event_nodata_wrapper div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 130%;
+  position: absolute;
+  bottom: 50px;
+  left: 550px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #191F28;
+}
+
 .lib_event_swiper {
   position: relative;
   width: 1760px;
@@ -1726,6 +1754,34 @@
     padding-left: 100px;
     background: url(../img/lib_event_bg.svg) no-repeat top center;
     background-size: cover;
+  }
+
+  .lib_event_nodata_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1080px;
+    height: 462px;
+    padding-left: 230px;
+  }
+
+  .lib_event_nodata_wrapper img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .lib_event_nodata_wrapper div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 130%;
+    position: absolute;
+    bottom: 25px;
+    left: 275px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #191F28;
   }
 
   .lib_event_swiper {
