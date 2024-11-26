@@ -135,6 +135,17 @@
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
+			<div class="loading-overlay">
+				<div class="loader"></div>
+				<p class="loading-text">잠시만 기다려주세요.</p>
+			</div>
 		</div>
+		<script>
+			$('.loading-overlay').fadeIn();
+
+			setTimeout(function () {
+				$('.loading-overlay').fadeOut();
+			}, 5000); // 5000ms = 5초
+		</script>
 	</body>
 </html>
