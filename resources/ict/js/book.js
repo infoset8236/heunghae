@@ -134,6 +134,39 @@ $(function () {
 	});
 });
 
+//신착도서
+$(document).ready(function () {
+	const groupSize = 9;
+
+	$('.books_swiper').each(function () {
+		const $tab = $(this);
+		const $lists = $tab.find('.slide-item');
+		const $swiperWrapper = $tab.find('.swiper-wrapper');
+
+		$lists.hide();
+
+		for (let i = 0; i < $lists.length; i += groupSize) {
+			const $swiperSlide = $('<div class="swiper-slide"></div>');
+
+			$lists.slice(i, i + groupSize).each(function () {
+				$swiperSlide.append($(this).show());
+			});
+
+			$swiperWrapper.append($swiperSlide);
+		}
+
+		new Swiper($tab.find('.swiper')[0], {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			pagination: {
+				el: $tab.find('.swiper-pagination')[0],
+				clickable: true,
+			},
+			loop: false,
+		});
+	});
+});
+
 //나의 서재
 $(document).ready(function () {
 	$('.mylib_wrap .my_tab a').click(function () {
