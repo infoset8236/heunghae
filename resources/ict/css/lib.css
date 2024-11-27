@@ -475,6 +475,13 @@
   }
 }
 
+.lib_information_container {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/lib_information_bg.svg) no-repeat top center;
+  background-size: cover;
+}
+
 /* 라이브러리보드 시설안내 */
 .lib_facility_container {
   width: 100%;
