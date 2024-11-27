@@ -62,6 +62,38 @@ $(function () {
 $(document).ready(function () {
 	const groupSize = 12;
 
+	$('#mn_tab9 .slider').each(function () {
+		const $tab = $(this);
+		const $lists = $tab.find('.list');
+		const $swiperWrapper = $tab.find('.swiper-wrapper');
+
+		$lists.hide();
+
+		for (let i = 0; i < $lists.length; i += groupSize) {
+			const $swiperSlide = $('<div class="swiper-slide"></div>');
+
+			$lists.slice(i, i + groupSize).each(function () {
+				$swiperSlide.append($(this).show());
+			});
+
+			$swiperWrapper.append($swiperSlide);
+		}
+
+		new Swiper($tab.find('.swiper-container')[0], {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			pagination: {
+				el: $tab.find('.swiper-pagination')[0],
+				clickable: true,
+			},
+			loop: false,
+		});
+	});
+});
+
+$(document).ready(function () {
+	const groupSize = 12;
+
 	$('#mn_tab10 .slider').each(function () {
 		const $tab = $(this);
 		const $lists = $tab.find('.list');

@@ -2400,6 +2400,7 @@ g text {
     gap: 20px;
 }
 
+#portrait_01,
 #portrait_02 {
     margin: 386px auto 0;
 }
@@ -2449,81 +2450,8 @@ g text {
 }
 
 
-#portrait_01 .swiper-container .swiper-wrapper {
-    display: grid !important;
-    padding: 0;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-row-gap: 90px;
-    grid-column-gap: 88px;
-    justify-items: center;
-}
 
-#portrait_01 .swiper-slide {
-    width: 440px;
-    height: 842px;
-}
-
-#portrait_01 .book_title {
-    font-family: 'Pretendard-Semibold', sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 140%;
-    overflow: hidden;
-    width: 100%;
-    max-width: 440px;
-    margin-top: 36px;
-    margin-bottom: 8px;
-    white-space: nowrap;
-    letter-spacing: -1.2px;
-    text-overflow: ellipsis;
-    color: #191f28;
-}
-
-#portrait_01 .writer {
-    font-family: 'Pretendard-Regular', sans-serif;
-    font-size: 38px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: normal;
-    overflow: hidden;
-    width: 100%;
-    max-width: 440px;
-    white-space: nowrap;
-    letter-spacing: -1px;
-    text-transform: capitalize;
-    text-overflow: ellipsis;
-    color: #6b7684;
-}
-
-#portrait_01 .writer span {
-    font-size: 38px;
-    display: inline-block;
-    margin-left: 8px;
-    color: #4e5968;
-}
-
-#portrait_01 .slide-item img {
-    width: 440px;
-    height: 676px;
-    border-radius: 24px;
-    box-shadow: 0 10px 30px 0 rgba(25, 33, 61, 0.2);
-    object-fit: cover;
-}
-
-#portrait_01 .swiper-pagination {
-    position: absolute !important;
-    top: 2800px !important;
-    left: 50%;
-    display: flex !important;
-    justify-content: center;
-    width: 50%;
-    transform: translateX(-50%);
-    gap: 28px !important;
-    /* z-index: 9999999999; */
-}
-
+#portrait_01 .swiper-slide,
 #portrait_02 .swiper-slide {
     display: grid !important;
     grid-template-columns: repeat(4, 380px);
@@ -2534,12 +2462,14 @@ g text {
     width: 1800px;
 }
 
+#portrait_01 .swiper-slide .list,
 #portrait_02 .swiper-slide .list {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
+#portrait_01 .swiper-container,
 #portrait_02 .swiper-container {
     width: 1800px;
     height: 100%;
@@ -2548,12 +2478,13 @@ g text {
     margin: 0 auto;
 }
 
-
+#portrait_01 .swiper-slide .slide-item,
 #portrait_02 .swiper-slide .slide-item {
     height: 683px;
     width: 346px;
 }
 
+#portrait_01 .book_title,
 #portrait_02 .book_title {
     font-family: 'Pretendard-Medium', sans-serif;
     font-size: 48px;
@@ -2571,6 +2502,7 @@ g text {
     color: #191f28;
 }
 
+#portrait_01 .writer,
 #portrait_02 .writer {
     font-family: 'Pretendard-Medium', sans-serif;
     font-size: 40px;
@@ -2587,6 +2519,7 @@ g text {
     color: #6b7684;
 }
 
+#portrait_01 .writer span,
 #portrait_02 .writer span {
     font-size: 38px;
     display: inline-block;
@@ -2594,6 +2527,7 @@ g text {
     color: #4e5968;
 }
 
+#portrait_01 .swiper-slide img,
 #portrait_02 .swiper-slide img {
     width: 346px;
     height: 520px;
@@ -2602,6 +2536,7 @@ g text {
     object-fit: cover;
 }
 
+#portrait_01 .swiper-pagination,
 #portrait_02 .swiper-pagination {
     position: absolute !important;
     top: 2672px !important;
@@ -2653,8 +2588,8 @@ g text {
 #portrait_07 .swiper-slide {
     display: grid;
     grid-template-columns: repeat(3, 520px);
-    grid-template-rows: repeat(2, 1fr);
-    /* grid-row-gap: 100px; */
+    grid-template-rows: repeat(2, 930px);
+    grid-row-gap: 100px;
     grid-column-gap: 120px;
     justify-items: center;
 }
@@ -4990,11 +4925,13 @@ g text {
         margin: 0 auto;
     }
 
+    #portrait_01,
     #portrait_02 {
         height: 1250px;
         margin-top: 178px;
     }
 
+    #portrait_01 .swiper-container,
     #portrait_02 .swiper-container {
         height: 1165px;
     }
@@ -5058,66 +4995,23 @@ g text {
         height: 12px;
     }
 
-    #portrait_01 .swiper-slide {
-        display: grid !important;
-        padding: 0;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, auto);
-        grid-row-gap: 45px;
-        grid-column-gap: 44px;
-        justify-items: center;
-    }
 
-    #portrait_01 .slide-item {
-        width: 220px;
-        height: 421px;
-    }
-
-    #portrait_01 .book_title {
-        font-size: 24px;
-        max-width: 220px;
-        margin-top: 18px;
-        margin-bottom: 4px;
-    }
-
-    #portrait_01 .writer {
-        font-size: 19px;
-        max-width: 220px;
-    }
-
-    #portrait_01 .writer span {
-        font-size: 19px;
-        margin-left: 4px;
-    }
-
-    #portrait_01 .slide-item img {
-        width: 220px;
-        height: 338px;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px 0 rgba(25, 33, 61, 0.2);
-    }
-
-    #portrait_01 .swiper-pagination {
-        top: 1400px !important;
-        left: 50%;
-        width: 50%;
-        transform: translateX(-50%);
-        gap: 14px !important;
-    }
-
+    #portrait_01 .swiper-slide,
     #portrait_02 .swiper-slide {
         display: grid !important;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 190px);
         grid-template-rows: repeat(3, 342px);
         grid-row-gap: 36px;
-        grid-column-gap: 62px;
+        grid-column-gap: 40px;
         justify-items: center;
     }
 
+    #portrait_01 .slide-item,
     #portrait_02 .slide-item {
         height: 342px;
     }
 
+    #portrait_01 .book_title,
     #portrait_02 .book_title {
         font-size: 24px;
         max-width: 179px;
@@ -5125,16 +5019,19 @@ g text {
         margin-bottom: 4px;
     }
 
+    #portrait_01 .writer,
     #portrait_02 .writer {
         font-size: 20px;
         max-width: 179px;
     }
 
+    #portrait_01 .writer span,
     #portrait_02 .writer span {
         font-size: 19px;
         margin-left: 4px;
     }
 
+    #portrait_01 .slide-item img,
     #portrait_02 .slide-item img {
         width: 173px;
         height: 260px;
@@ -5142,6 +5039,7 @@ g text {
         box-shadow: 0 5px 15px 0 rgba(25, 33, 61, 0.2);
     }
 
+    #portrait_01 .swiper-pagination,
     #portrait_02 .swiper-pagination {
         top: 1336px !important;
         gap: 14px !important;
@@ -5153,8 +5051,8 @@ g text {
     #portrait_06 .swiper-slide,
     #portrait_07 .swiper-slide {
         display: grid !important;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 260px);
+        grid-template-rows: repeat(2, 465px);
         grid-row-gap: 50px;
         grid-column-gap: 60px;
         justify-items: center;
