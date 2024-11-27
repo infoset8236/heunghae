@@ -21,6 +21,14 @@
     background-size: 400px;
 }
 
+#loading h3 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
 #loading .container {
     width: 200px;
     height: 200px;
@@ -5381,6 +5389,14 @@ g text {
         margin: auto;
         filter: url('#goo');
         animation: rotate-move 2s ease-in-out infinite;
+    }
+
+    #loading h3 {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
     }
 
     #loading .dot {
