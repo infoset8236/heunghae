@@ -1,16 +1,21 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<title>Document</title>
 		<meta charset="utf-8" />
 		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-		<title>AI 도서추천</title>
 		<meta content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1" name="viewport" />
 		<link href="../../../../resources/ict/css/reset.css" rel="stylesheet" type="text/css" />
 		<link href="../../../../resources/ict/css/font.css" rel="stylesheet" type="text/css" />
 		<link href="../../../../resources/ict/css/book.css" rel="stylesheet" type="text/css" />
-		<script src="../../../../../resources/ict/js/jquery-3.7.1.min.js" type="text/javascript"></script>
-		<script src="../../../../../resources/ict/js/book.js" type="text/javascript"></script>
+		<link href="../../../../resources/ict/css/lib.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../resources/ict/css/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+		<script src="../../../../resources/ict/plugin/jquery-3.7.1.min.js" type="text/javascript"></script>
+		<script src="../../../../resources/ict/plugin/swiper-bundle.min.js" type="text/javascript"></script>
+		<script src="../../../../resources/ict/js/book.js" type="text/javascript"></script>
+		<script src="../../../../resources/ict/js/lib.js" type="text/javascript"></script>
 	</head>
+
 	<body>
 		<div class="container main_wrap">
 			<div class="header main">
@@ -48,7 +53,7 @@
 					<div class="bar"></div>
 				</div>
 				<div class="ellipse_wrap">
-					<img src="../../../../resources/ict/img/main.png" alt="" />
+					<img alt="" src="../../../../resources/ict/img/main.png" />
 					<div class="ellipse-deco_01">
 						<div class="ellipse-deco_02"></div>
 					</div>
@@ -89,13 +94,13 @@
 			</div>
 			<div class="search_main_total">
 				<div class="select_frame">
-					<input type="radio" id="select1" name="shop" checked="checked" /><label for="select1">도서명</label> <input type="radio" id="select2" name="shop" /><label for="select2">저자명</label>
-					<input type="radio" id="select3" name="shop" /><label for="select3">출판사</label>
+					<input checked="checked" id="select1" name="shop" type="radio" /><label for="select1">도서명</label> <input id="select2" name="shop" type="radio" /><label for="select2">저자명</label>
+					<input id="select3" name="shop" type="radio" /><label for="select3">출판사</label>
 				</div>
 
 				<div class="search_input_wrap">
 					<div class="search_input_inner">
-						<input class="search_inputbox" type="text" placeholder="검색어를 입력하세요" />
+						<input class="search_inputbox" placeholder="검색어를 입력하세요" type="text" />
 					</div>
 					<div class="search_input_btn">
 						<div class="search_input_btn_inner">
