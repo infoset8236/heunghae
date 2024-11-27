@@ -3751,6 +3751,13 @@ g text {
     background-size: cover;
 }
 
+#librarian_book {
+    position: relative;
+    height: 100vh;
+    background: url('../img/bg_libr.png') center center no-repeat;
+    background-size: cover;
+}
+
 .new_wrap .books_swiper {
     width: 1840px;
     margin: 0 auto;
@@ -4241,37 +4248,6 @@ g text {
         width: 410px;
     }
 
-
-    /*  @keyframes ripple1 {
-        0% {
-          transform: translateX(-50%) scale(1);
-          opacity: 0.5;
-        }
-        50% {
-          transform: translateX(-50%) scale(1.1); 
-          opacity: 0.7;
-        }
-        100% {
-          transform: translateX(-50%) scale(1.2); 
-          opacity: 0;
-        }
-      }
-      
-      @keyframes ripple2 {
-        0% {
-          transform: translate(-50%, -50%) scale(1);
-          opacity: 0.7;
-        }
-        50% {
-          transform: translate(-50%, -50%) scale(1.1); 
-          opacity: 0.5;
-        }
-        100% {
-          transform: translate(-50%, -50%) scale(1.2); 
-          opacity: 0;
-        }
-      }
-      */
 
     .main_wrap .sound-wave.w_01 {
         height: 168px;
