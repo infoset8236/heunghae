@@ -3743,7 +3743,7 @@ g text {
     display: inline-block;
 }
 
-/**********************************************newbook_2160px**********************************************/
+/**********************************************newbook, librarian_2160px**********************************************/
 .new_wrap {
     position: relative;
     height: 100vh;
@@ -4005,6 +4005,262 @@ g text {
     background-color: #191f28;
 }
 
+/**********************************************bestbook_2160px**********************************************/
+.best_wrap {
+    position: relative;
+    height: 100vh;
+    background: url('../img/bg_best.png') center center no-repeat;
+    background-size: cover;
+    /* padding-top: 439px;*/
+}
+
+.best_wrap .header_txt {
+    color: #fff;
+}
+
+.lib_best_nodata_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 2160px;
+    height: 924px;
+    padding-top: 1128px;
+    padding-left: 690px;
+}
+
+.lib_best_nodata_wrapper img {
+    width: 800px;
+    height: 800px;
+}
+
+.lib_best_nodata_wrapper div {
+    font-family: "Pretendard", sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 130%;
+    position: absolute;
+    bottom: -400px;
+    left: 730px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #191F28;
+}
+
+.best_wrap .lib_best_swiper {
+    position: relative;
+    width: 2160px;
+    height: 2914px;
+    padding-top: 414px;
+}
+
+.best_wrap .lib_best_swiper .swiper {
+    width: 2160px;
+    height: 2914px;
+    padding-top: 55px !important;
+    padding-left: 180px !important;
+}
+
+.best_wrap .lib_best_swiper .swiper-slide {
+    display: flex !important;
+    flex-wrap: wrap;
+    row-gap: 100px;
+}
+
+.best_wrap .lib_best_swiper .swiper-pagination {
+    position: absolute;
+    /* bottom: -226px !important; */
+    display: flex !important;
+    justify-content: center;
+    gap: 40px;
+    top: 3283px;
+}
+
+.best_wrap .lib_best_swiper .swiper-pagination-bullet {
+    width: 24px;
+    height: 24px;
+    margin: 0 !important;
+    /* transition: background-color 0.3s ease, transform 0.3s ease; */
+    opacity: 1;
+    background-color: #ADB5BD;
+    pointer-events: auto;
+}
+
+.best_wrap .lib_best_swiper .swiper-pagination-bullet-active {
+    background-color: #333D4B;
+}
+
+.best_wrap .lib_best_swiper .swiper-item {
+    position: relative;
+}
+
+.best_wrap .lib_best_ranking {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    position: absolute;
+    top: -79px;
+    left: 176px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    padding: 49px 41px 49px 42px;
+    text-align: center;
+    letter-spacing: -1.3px;
+    text-transform: capitalize;
+    color: #FFF;
+    border-radius: 50%;
+    background: #000;
+}
+
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child .lib_best_ranking,
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_ranking,
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_ranking,
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_ranking {
+    font-family: "Century Gothic";
+    font-size: 72px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    position: absolute;
+    top: -54px;
+    left: 310px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    padding: 54px 51px;
+    text-align: center;
+    letter-spacing: -1.5px;
+    text-transform: capitalize;
+    color: #FFF;
+    border-radius: 50%;
+    background: #000;
+}
+
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child,
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2),
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child,
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) {
+    width: 800px;
+    height: 1582px;
+}
+
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child .lib_best_title,
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_title,
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_title,
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_title {
+    font-family: "Pretendard-Medium", sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    overflow: hidden;
+    width: 800px;
+    margin-top: 52px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    white-space: nowrap;
+    letter-spacing: -1.2px;
+    text-overflow: ellipsis;
+    color: #191F28;
+}
+
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child .lib_best_writer,
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_writer,
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_writer,
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_writer {
+    font-family: "Pretendard-Regular", sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    overflow: hidden;
+    width: 800px;
+    margin-bottom: 12px;
+    margin-left: 8px;
+    white-space: nowrap;
+    letter-spacing: -0.96px;
+    text-overflow: ellipsis;
+    color: #4E5968;
+}
+
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child,
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child {
+    margin-right: 150px;
+}
+
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(3),
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(4),
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(3),
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(4) {
+    margin-right: 130px;
+}
+
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child img,
+.best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) img,
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child img,
+.best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) img {
+    width: 820px;
+    height: 1260px;
+    border-radius: 40px;
+    box-shadow: 20px 20px 70px 5px rgba(0, 0, 0, 0.20);
+    object-fit: cover;
+}
+
+.best_wrap .lib_best_swiper .swiper-slide .swiper-item {
+    width: 512px;
+    padding-bottom: 25px;
+    height: 1060px;
+}
+
+.best_wrap .lib_best_swiper .swiper-slide .swiper-item img {
+    width: 512px;
+    height: 757px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 70px 10px rgba(0, 0, 0, 0.20);
+    object-fit: cover;
+}
+
+.best_wrap .lib_best_title {
+    font-family: "Pretendard-Medium", sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    overflow: hidden;
+    width: 512px;
+    margin-top: 48px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    white-space: nowrap;
+    letter-spacing: -1.2px;
+    text-overflow: ellipsis;
+    color: #191F28;
+}
+
+.best_wrap .lib_best_writer {
+    font-family: "Pretendard-Regular", sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    overflow: hidden;
+    width: 512px;
+    margin-bottom: 12px;
+    margin-left: 8px;
+    white-space: nowrap;
+    letter-spacing: -0.96px;
+    text-overflow: ellipsis;
+    color: #4E5968;
+}
+
+
 
 @media (max-width: 1080px) {
 
@@ -4207,6 +4463,7 @@ g text {
     .pagination span {
         margin: 0 10px;
     }
+
 
     /************************************************main_1080******************************************************/
     .main_wrap .header.main {
@@ -5870,7 +6127,7 @@ g text {
         line-height: 25px;
     }
 
-    /************************************************newbook_1080******************************************************/
+    /************************************************newbook,librarian_1080******************************************************/
     .new_wrap {
         width: 100%;
         height: 1920px;
@@ -5998,5 +6255,261 @@ g text {
         background-color: #191f28;
     }
 
+    /************************************************bestBook_1080******************************************************/
+    .best_wrap {
+        width: 100%;
+        height: 1920px;
+    }
 
+
+
+    .lib_best_nodata_wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 1080px;
+        height: 462px;
+        padding-top: 564px;
+        padding-left: 345px;
+    }
+
+    .lib_best_nodata_wrapper img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .lib_best_nodata_wrapper div {
+        font-family: "Pretendard-Medium", sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 130%;
+        position: absolute;
+        bottom: -200px;
+        left: 365px;
+        text-align: center;
+        letter-spacing: -1px;
+        color: #191F28;
+    }
+
+    .best_wrap .lib_best_swiper {
+        position: relative;
+        width: 1080px;
+        height: 1457px;
+        padding-top: 207px;
+    }
+
+    .best_wrap .lib_best_swiper .swiper {
+        width: 1080px;
+        height: 1457px;
+        padding-top: 28px !important;
+        padding-left: 90px !important;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-slide {
+        display: flex !important;
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-pagination {
+        position: absolute;
+        display: flex !important;
+        justify-content: center;
+        gap: 20px;
+        top: 1640px;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        margin: 0 !important;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        opacity: 1;
+        background-color: #ADB5BD;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-pagination-bullet-active {
+        background-color: #333D4B;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-item {
+        position: relative;
+    }
+
+    .best_wrap .lib_best_ranking {
+        font-size: 30px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: normal;
+        position: absolute;
+        top: -39px;
+        left: 88px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        padding: 25px 21px 25px 21px;
+        text-align: center;
+        letter-spacing: -0.65px;
+        text-transform: capitalize;
+        color: #FFF;
+        border-radius: 50%;
+        background: #000;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child .lib_best_ranking,
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_ranking,
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_ranking,
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_ranking {
+        font-size: 36px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: normal;
+        position: absolute;
+        top: -27px;
+        left: 155px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+        padding: 27px 25.5px;
+        text-align: center;
+        letter-spacing: -0.75px;
+        text-transform: capitalize;
+        color: #FFF;
+        border-radius: 50%;
+        background: #000;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child,
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2),
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child,
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) {
+        width: 400px;
+        height: 790px;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child .lib_best_title,
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_title,
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_title,
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_title {
+        font-family: "Pretendard", sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: normal;
+        overflow: hidden;
+        width: 400px;
+        margin-top: 26px;
+        margin-bottom: 10px;
+        margin-left: 4px;
+        white-space: nowrap;
+        letter-spacing: -0.6px;
+        text-overflow: ellipsis;
+        color: #191F28;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child .lib_best_writer,
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_writer,
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_writer,
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_writer {
+        font-family: "Pretendard", sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        overflow: hidden;
+        width: 400px;
+        margin-bottom: 6px;
+        margin-left: 4px;
+        white-space: nowrap;
+        letter-spacing: -0.48px;
+        text-overflow: ellipsis;
+        color: #4E5968;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child,
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child {
+        margin-right: 75px;
+        height: 790px;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(3),
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(4),
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(3),
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(4) {
+        margin-right: 65px;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:first-child img,
+    .best_wrap .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) img,
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child img,
+    .best_wrap .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) img {
+        width: 410px;
+        height: 630px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 35px 5px rgba(0, 0, 0, 0.20);
+        object-fit: cover;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-slide .swiper-item {
+        width: 256px;
+        padding-bottom: 13px;
+        height: 530px;
+    }
+
+    .best_wrap .lib_best_swiper .swiper-slide .swiper-item img {
+        width: 256px;
+        height: 379px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 35px 5px rgba(0, 0, 0, 0.20);
+        object-fit: cover;
+    }
+
+    .best_wrap .lib_best_title {
+        font-family: "Pretendard-Medium", sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: normal;
+        overflow: hidden;
+        width: 256px;
+        margin-top: 24px;
+        margin-bottom: 10px;
+        margin-left: 4px;
+        white-space: nowrap;
+        letter-spacing: -0.6px;
+        text-overflow: ellipsis;
+        color: #191F28;
+    }
+
+    .best_wrap .lib_best_writer {
+        font-family: "Pretendard", sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        overflow: hidden;
+        width: 256px;
+        margin-bottom: 6px;
+        margin-left: 4px;
+        white-space: nowrap;
+        letter-spacing: -0.48px;
+        text-overflow: ellipsis;
+        color: #4E5968;
+    }
+
+    .best_wrap .lib_best_year {
+        font-family: "Pretendard", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        margin-left: 4px;
+        letter-spacing: -0.48px;
+        color: #4E5968;
+    }
 }

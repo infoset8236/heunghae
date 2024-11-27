@@ -134,7 +134,7 @@ $(function () {
 	});
 });
 
-//신착도서
+//신착도서, 사서추천도서
 $(document).ready(function () {
 	const groupSize = 9;
 
@@ -165,6 +165,20 @@ $(document).ready(function () {
 			loop: false,
 		});
 	});
+});
+//대출베스트
+$(document).ready(function () {
+	function LibBestSwiper() {
+		const swiper = new Swiper('.best_wrap .swiper', {
+			loop: false,
+			pagination: {
+				el: '.best_wrap .swiper-pagination',
+				clickable: true,
+			},
+		});
+	}
+
+	LibBestSwiper();
 });
 
 //나의 서재
