@@ -17,6 +17,7 @@
 				<p class="sm_header_txt">book search</p>
 				<h1 class="header_txt">도서검색</h1>
 			</div>
+
 			<div class="search_ment">
 				<span>
 					검색어
@@ -26,9 +27,17 @@
 					검색되었습니다.
 				</span>
 			</div>
+			<div class="no_content" style="display: none">
+				<div class="no_wrapper">
+					<img src="../../../../resources/ict/img/Polar_Bear.gif" alt="" />
+					<h3>검색결과가 없어요</h3>
+					<p>다른 검색어로 다시 시도해보시는 건 어떨까요?</p>
+					<a href="#this" class="back_search_tag">돌아가기</a>
+				</div>
+			</div>
+			<!--예외처리추가-->
 			<div class="pager_wrap">
 				<div class="search_wrapper overflow-y">
-					<h3>검색결과가 없습니다.</h3>
 					<div class="mylist mylist list_01">
 						<div class="list_wrapper">
 							<img class="mybook_img" src="../../../../resources/ict/img/dummy.svg" alt="" />
