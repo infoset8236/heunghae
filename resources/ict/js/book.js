@@ -34,6 +34,15 @@ $(document).ready(function () {
 	});
 });
 
+//로딩
+$(document).ready(function () {
+	$('#loading').show();
+
+	setTimeout(function () {
+		$('#loading').fadeOut();
+	}, 3000);
+});
+
 //AI 도서추천
 $(function () {
 	$('.reco_tab a').click(function () {

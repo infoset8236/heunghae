@@ -150,6 +150,23 @@
 		</script>
 
 		<div class="container recommendedbooks_wrap">
+			<div id="loading" style="display: none">
+				<!--로딩화면-->
+				<div class="container">
+					<div class="dot dot-1"></div>
+					<div class="dot dot-2"></div>
+					<div class="dot dot-3"></div>
+				</div>
+
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+					<defs>
+						<filter id="goo">
+							<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+							<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" />
+						</filter>
+					</defs>
+				</svg>
+			</div>
 			<div class="header">
 				<p class="sm_header_txt">AI recommended books</p>
 				<h1 class="header_txt">AI 추천도서</h1>
