@@ -242,43 +242,10 @@
     background-size: cover;
   }
 
-  .lib_notice_new {
-    padding-left: 100px;
-  }
-
-  .lib_notice_nodata_wrapper {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1080px;
-    height: 462px;
-    transform: translate(-50%, -50%);
-  }
-
-  .lib_notice_nodata_wrapper img {
-    width: 400px;
-    height: 400px;
-  }
-
-  .lib_notice_nodata_wrapper div {
-    font-family: 'Pretendard-Medium', sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 130%;
-    position: absolute;
-    bottom: 30px;
-    text-align: center;
-    letter-spacing: -1px;
-    color: #191F28;
-  }
-
   .lib_notice_selected_item_swiper {
     height: 1381px;
     padding-top: 100px !important;
+    padding-left: 105px !important;
   }
 
   .lib_notice_selected_item_swiper .swiper-slide img {
