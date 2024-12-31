@@ -25,6 +25,7 @@ $(document).ready(function () {
 				el: $tab.find('.swiper-pagination')[0],
 				clickable: true,
 			},
+			arrowTouchMove: false,
 			loop: true,
 			autoplay: {
 				delay: 10000,
@@ -55,6 +56,7 @@ $(document).ready(function () {
 				delay: 10000,
 				disableOnInteraction: false,
 			},
+			arrowTouchMove: false,
 			effect: 'fade',
 			fadeEffect: {
 				crossFade: true,
@@ -79,6 +81,7 @@ $(document).ready(function () {
 				delay: 10000,
 				disableOnInteraction: false,
 			},
+			arrowTouchMove: false,
 			slidesPerView: 5,
 			breakpoints: {
 				2160: {
@@ -104,6 +107,7 @@ $(document).ready(function () {
 				delay: 9900,
 				disableOnInteraction: false,
 			},
+			arrowTouchMove: false,
 			effect: 'fade',
 			fadeEffect: {
 				crossFade: true,
@@ -122,6 +126,7 @@ $(document).ready(function () {
 			loop: true,
 			direction: 'vertical',
 			slidesPerView: 6,
+			arrowTouchMove: false,
 			autoplay: {
 				delay: 10000,
 				disableOnInteraction: false,
@@ -142,6 +147,7 @@ $(document).ready(function () {
 	function LibEventSwiper() {
 		const swiper = new Swiper('.lib_event_swiper .swiper', {
 			loop: true,
+			arrowTouchMove: false,
 			autoplay: {
 				delay: 10000,
 				disableOnInteraction: false,
@@ -162,6 +168,7 @@ $(document).ready(function () {
 	function LibLibrarianSwiper() {
 		const swiper = new Swiper('.lib_librarian_swiper .swiper', {
 			loop: true,
+			arrowTouchMove: false,
 			autoplay: {
 				delay: 10000,
 				disableOnInteraction: false,
@@ -192,6 +199,7 @@ $(document).ready(function () {
 	function LibBestSwiper() {
 		const swiper = new Swiper('.lib_best_container .swiper', {
 			loop: true,
+			arrowTouchMove: false,
 			autoplay: {
 				delay: 10000,
 				disableOnInteraction: false,
@@ -208,6 +216,7 @@ $(document).ready(function () {
 	function LibNewsSwiper() {
 		const swiper = new Swiper('.lib_living_news_list_swiper', {
 			loop: true,
+			arrowTouchMove: false,
 			autoplay: {
 				delay: 10000,
 				disableOnInteraction: false,
@@ -471,6 +480,7 @@ $(document).ready(function () {
 				delay: 9790,
 				disableOnInteraction: false,
 			},
+			arrowTouchMove: false,
 			effect: 'fade',
 			fadeEffect: {
 				crossFade: true,
