@@ -1,4 +1,40 @@
 $(document).ready(function () {
+	const groupSize = 9;
+
+	$('.l_books_swiper').each(function () {
+		const $tab = $(this);
+		const $lists = $tab.find('.slide-item');
+		const $swiperWrapper = $tab.find('.swiper-wrapper');
+
+		$lists.hide();
+
+		for (let i = 0; i < $lists.length; i += groupSize) {
+			const $swiperSlide = $('<div class="swiper-slide"></div>');
+
+			$lists.slice(i, i + groupSize).each(function () {
+				$swiperSlide.append($(this).show());
+			});
+
+			$swiperWrapper.append($swiperSlide);
+		}
+
+		new Swiper($tab.find('.swiper')[0], {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			pagination: {
+				el: $tab.find('.swiper-pagination')[0],
+				clickable: true,
+			},
+			loop: true,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+		});
+	});
+});
+
+$(document).ready(function () {
 	function updateDateTime() {
 		const now = new Date();
 		const formattedTime = now.toTimeString().slice(0, 5);
@@ -46,10 +82,10 @@ $(document).ready(function () {
 			slidesPerView: 5,
 			breakpoints: {
 				2160: {
-					spaceBetween: 24,
+					spaceBetween: 70,
 				},
 				1080: {
-					spaceBetween: 12,
+					spaceBetween: 35,
 				},
 			},
 			pagination: {
@@ -168,6 +204,20 @@ $(document).ready(function () {
 	}
 
 	LibBestSwiper();
+
+	function LibNewsSwiper() {
+		const swiper = new Swiper('.lib_living_news_list_swiper', {
+			loop: true,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			slidesPerView: 3,
+			direction: 'vertical',
+		});
+	}
+
+	LibNewsSwiper();
 });
 
 $(document).ready(function () {
@@ -181,13 +231,10 @@ $(document).ready(function () {
 					index: '01',
 					title: {
 						kr: '주차장',
-						en: 'parking lot',
+						en: 'PARKING GARAGE',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['주차장 주차면수 : 일반 70대, 경차 5대, 장애인 3대 / 총78대'],
 				},
 			],
 		},
@@ -200,280 +247,177 @@ $(document).ready(function () {
 					index: '01',
 					title: {
 						kr: '음악강당',
-						en: 'music hall',
+						en: 'MUSIC HALL',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~18:00', '행사 운영시에만 개방'],
 				},
 				{
 					index: '02',
 					title: {
 						kr: '어린이자료실',
-						en: "Children's Archives",
+						en: 'CHILDREN LIBRARY',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~18:00', '소장자료 : 어린이도서 000 총류~900 역사  '],
 				},
 				{
 					index: '03',
 					title: {
 						kr: '유아자료실',
-						en: "infant's Archives",
+						en: 'INFANT LIBRARY',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~18:00', '소장자료 : 유아도서 000 총류~900 역사\n'],
 				},
 				{
 					index: '04',
 					title: {
 						kr: '이야기방',
-						en: 'story room',
+						en: 'STORY ROOM',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~18:00', '유아 프로그램 운영\n'],
 				},
 				{
 					index: '05',
 					title: {
 						kr: '수유실',
-						en: 'feeding room',
+						en: 'NURSING ROOM',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~18:00'],
 				},
 				{
 					index: '06',
 					title: {
 						kr: '무인반납실',
-						en: 'reception room',
+						en: 'SELF RETURN ROOM',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 휴관일 & 개관일 18:00~익일 09:00 까지'],
 				},
 			],
 		},
 		{
 			floor: '2F',
 			image: '/resources/ict/img/map2F.svg',
-			duration: 100000,
+			duration: 90000,
 			slides: [
 				{
 					index: '01',
-					title: { kr: '프로그램실1', en: 'program room 1' },
+					title: { kr: '멀티 음악자료실', en: 'MULTIMEDIA MUSIC LIBRARY' },
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~22:00', '소장자료 : 음악관련 CD, DVD, LP, 악보 등'],
 				},
 				{
 					index: '02',
-					title: { kr: '프로그램실2', en: 'program room 2' },
+					title: { kr: '음악자료실', en: 'MUSIC LIBRARY' },
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~22:00', '소장자료 : 음악관련 도서'],
 				},
 				{
 					index: '03',
-					title: { kr: '프로그램실3', en: 'program room 3' },
+					title: { kr: '정기간행물실', en: 'PERIODICALS LIBRARY' },
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~22:00 ', '소장자료 : 잡지, 신문 등'],
 				},
 				{
 					index: '04',
-					title: { kr: '작곡실', en: 'composition room' },
+					title: { kr: '프로그램실 1', en: 'PROGRAM ROOM 1' },
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: [' 이용시간 : 09:00~18:00 ', '프로그램 운영시에만 개방'],
 				},
 				{
 					index: '05',
-					title: { kr: '연주실', en: 'performance room' },
+					title: { kr: '프로그램실 2', en: 'PROGRAM ROOM 2' },
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: [' 이용시간 : 09:00~18:00 ', '프로그램 운영시에만 개방'],
 				},
 				{
 					index: '06',
-					title: { kr: '오디오룸', en: 'Audio Room' },
+					title: { kr: '프로그램실 3', en: 'PROGRAM ROOM 3' },
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: [' 이용시간 : 09:00~18:00 ', '프로그램 운영시에만 개방'],
 				},
 				{
 					index: '07',
-					title: { kr: '스마트라운', en: 'Smart lounge' },
+					title: { kr: '음악감상실', en: 'LISTENING ROOM' },
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~18:00', '이용방법 : 홈페이지 사전예약'],
 				},
 				{
 					index: '08',
-					title: { kr: '음악자료실', en: 'music archives' },
+					title: { kr: '연주실', en: 'PRACTICE ROOM' },
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~18:00', '이용방법 : 홈페이지 사전예약'],
 				},
 				{
 					index: '09',
-					title: { kr: '연속간행물실', en: 'continuous publication room' },
+					title: { kr: '작곡실', en: 'COMPOSITION ROOM' },
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
-				},
-				{
-					index: '10',
-					title: { kr: '예술자료실', en: 'art archives' },
-					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~18:00', '이용방법 : 홈페이지 사전예약'],
 				},
 			],
 		},
 		{
 			floor: '3F',
-			image: '/resources/ict/img/map3F.svg',
+			image: '/resources/ict/img/map03.svg',
 			duration: 60000,
 			slides: [
 				{
 					index: '01',
 					title: {
-						kr: '휴게실',
-						en: 'retiring room',
+						kr: '일반자료실',
+						en: 'GENERAL LIBRARY',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~22:00', '소장자료 : 000 총류~900 역사(800 제외)'],
 				},
 				{
 					index: '02',
 					title: {
-						kr: '자원봉사자실',
-						en: "volunteer's room",
+						kr: '문학자료실',
+						en: 'LITERATURE LIBRARY',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~22:00', '소장자료 : 800 문학'],
 				},
 				{
 					index: '03',
 					title: {
-						kr: '작가실',
-						en: "writer's room",
+						kr: '휴게실',
+						en: 'RESTROOM',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~22:00'],
 				},
 				{
 					index: '04',
 					title: {
-						kr: '문학자료실',
-						en: 'literary archives',
+						kr: '작가실 ',
+						en: 'AUTHOR ROOM',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~18:00'],
 				},
 				{
 					index: '05',
 					title: {
-						kr: '일반자료실',
-						en: 'general data room',
+						kr: '자원봉사자실',
+						en: 'VOLUNTEER ROOM',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~18:00'],
 				},
 				{
 					index: '06',
 					title: {
 						kr: '하모니스텝',
-						en: 'Harmony Step',
+						en: 'HARMONY STEP',
 					},
 					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
-				},
-			],
-		},
-		{
-			floor: '4F',
-			image: '/resources/ict/img/map4F.svg',
-			duration: 20000,
-			slides: [
-				{
-					index: '01',
-					title: {
-						kr: '도서관사무실',
-						en: 'Office',
-					},
-					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
-				},
-				{
-					index: '02',
-					title: {
-						kr: '지역창업센터',
-						en: 'Regional Start-up Center',
-					},
-					image: '/resources/ict/img/dummy.svg',
-					list: [
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-						'관람가능시간 : 주말은 자원봉사자로 운영되므로 관람가능 시간이 변경될 수 있습니다.(이용문의: 053-810-9918)',
-					],
+					list: ['이용시간 : 09:00~22:00'],
 				},
 			],
 		},

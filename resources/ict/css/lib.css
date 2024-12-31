@@ -1,140 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-.loading-overlay {
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.loader {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 20px;
-  animation: spin 2s linear infinite;
-  border: 10px solid #f3f3f3;
-  border-top: 10px solid #3498db;
-  border-radius: 50%;
-}
-
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.loading-text {
-  font-family: "Pretendard", sans-serif;
-  font-size: 60px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 130%;
-  margin-top: 60px;
-  text-align: center;
-  letter-spacing: -2px;
-  color: #FFFFFF;
-}
-
-@media (width: 1080px) {
-  .loader {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    animation: spin 2s linear infinite;
-    border: 5px solid #f3f3f3;
-    border-top: 5px solid #3498db;
-    border-radius: 50%;
-  }
-
-
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  .loading-text {
-    font-family: "Pretendard", sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 130%;
-    margin-top: 30px;
-    text-align: center;
-    letter-spacing: -1px;
-    color: #FFFFFF;
-  }
+* {
+  font-family: 'Pretendard-Regular', sans-serif;
 }
 
 /* 라이브러리보드 메인 */
 .lib_main_container {
   position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   background: url(../img/lib_main_bg.svg) no-repeat top center;
   background-size: cover;
 }
 
+
 .lib_main_time {
-  font-family: "Spoqa Han Sans Neo", sans-serif;
-  font-size: 136px;
-  font-weight: 300;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 240px;
+  font-weight: 400;
   font-style: normal;
   line-height: normal;
-  padding: 259px 0 0 275px;
+  padding-top: 500px;
   color: #FFF;
 }
 
 .lib_main_date {
-  font-family: "Spoqa Han Sans Neo", sans-serif;
-  font-size: 36px;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 72px;
   font-weight: 400;
   font-style: normal;
   line-height: normal;
-  padding: 0 0 335px 289px;
+  padding-top: 24px;
   color: #FFF;
 }
 
 .lib_main_title {
-  font-family: "Pretendard", sans-serif;
-  font-size: 160px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: normal;
-  padding: 0 0 60px 268px;
-  animation: slideUp 0.8s ease-out forwards;
-  letter-spacing: -4px;
-  color: #191F28;
-}
-
-.lib_main_title span {
-  font-family: "Pretendard", sans-serif;
-  font-size: 160px;
+  font-family: "Pretendard-Mediium", sans-serif;
+  font-size: 120px;
   font-weight: 500;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: -4px;
+  line-height: 140%;
+  padding-top: 2193px;
+  animation: slideUp 0.8s ease-out forwards;
+  text-align: center;
+  letter-spacing: -2.4px;
   color: #191F28;
 }
 
 .lib_main_caption {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  font-weight: 500;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
   font-style: normal;
-  line-height: 120%;
-  padding: 0 0 0 278px;
-  animation: slideUp 0.8s ease-out forwards;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #FFF;
+  line-height: 150%;
+  padding-top: 60px;
+  text-align: center;
+  letter-spacing: 8px;
+  color: #8B95A1;
 }
 
 @keyframes slideUp {
@@ -149,67 +75,49 @@
 }
 
 @media (width: 1080px) {
-  .lib_main_container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(../img/lib_main_bg.svg) no-repeat top center;
-    background-size: cover;
-  }
-
   .lib_main_time {
-    font-family: "Spoqa Han Sans Neo", sans-serif;
-    font-size: 68px;
-    font-weight: 300;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 120px;
+    font-weight: 400;
     font-style: normal;
     line-height: normal;
-    padding: 130px 0 0 138px;
+    padding-top: 250px;
     color: #FFF;
   }
 
   .lib_main_date {
-    font-family: "Spoqa Han Sans Neo", sans-serif;
-    font-size: 18px;
+    font-family: "Pretendard-Regular", sans-serif;
+    font-size: 36px;
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    padding: 0 0 168px 145px;
+    padding-top: 12px;
     color: #FFF;
   }
 
   .lib_main_title {
-    font-family: "Pretendard", sans-serif;
-    font-size: 80px;
-    font-weight: 300;
-    font-style: normal;
-    line-height: normal;
-    padding: 0 0 30px 134px;
-    animation: slideUp 0.8s ease-out forwards;
-    letter-spacing: -2px;
-    color: #191F28;
-  }
-
-  .lib_main_title span {
-    font-family: "Pretendard", sans-serif;
-    font-size: 80px;
+    font-family: "Pretendard-Mediium", sans-serif;
+    font-size: 60px;
     font-weight: 500;
     font-style: normal;
-    line-height: normal;
-    letter-spacing: -2px;
+    line-height: 140%;
+    padding-top: 1097px;
+    animation: slideUp 0.8s ease-out forwards;
+    text-align: center;
+    letter-spacing: -1.2px;
     color: #191F28;
   }
 
   .lib_main_caption {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
+    font-family: "Pretendard-Regular", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
     font-style: normal;
-    line-height: 120%;
-    padding: 0 0 0 139px;
-    animation: slideUp 0.8s ease-out forwards;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #FFF;
+    line-height: 150%;
+    padding-top: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #8B95A1;
   }
 
   @keyframes slideUp {
@@ -224,6 +132,9 @@
   }
 }
 
+
+
+
 /* 라이브러리보드 공지사항 */
 .lib_notice_container {
   position: relative;
@@ -234,14 +145,20 @@
   background-size: cover;
 }
 
+.lib_notice_new {
+  padding-left: 200px;
+}
+
 .lib_notice_nodata_wrapper {
-  position: relative;
+  position: absolute;
+  top: 45%;
+  left: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 2160px;
   height: 924px;
-  padding-top: 1128px;
-  padding-left: 650px;
+  transform: translate(-50%, -50%);
 }
 
 .lib_notice_nodata_wrapper img {
@@ -250,50 +167,49 @@
 }
 
 .lib_notice_nodata_wrapper div {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 80px;
   font-weight: 500;
   font-style: normal;
   line-height: 130%;
   position: absolute;
-  bottom: -400px;
-  left: 670px;
+  bottom: 60px;
   text-align: center;
   letter-spacing: -2px;
   color: #191F28;
 }
 
 .lib_notice_selected_item_swiper {
-  width: 1941px;
   height: 2762px;
   padding-top: 200px !important;
-  padding-left: 100px !important;
 }
 
 .lib_notice_selected_item_swiper .swiper-slide img {
   width: 1741px;
   height: 2462px;
-  border-radius: 20px;
-  box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.10);
+  border-radius: 24px;
+  box-shadow: 80px 20px 80px rgba(0, 0, 0, 0.10);
   object-fit: cover;
 }
 
 .lib_notice_swiper {
   position:relative;
+  width: 100%;
   margin-top: 20px;
 }
 
 .lib_notice_swiper .swiper {
-  width: 1940px;
+  width: 1840px;
   height: 451px;
-  padding-left: 100px !important;
+  padding-left: 50px !important;
 }
+
 
 .lib_notice_swiper .swiper img {
   width: 248px;
   height: 351px;
-  border-radius: 20px;
-  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.10);
+  border-radius: 8px;
+  box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.10);
 }
 
 .lib_notice_swiper .swiper-pagination {
@@ -328,7 +244,7 @@
 }
 
 .lib_notice_ticker_message {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 44px;
   font-weight: 500;
   font-style: normal;
@@ -359,14 +275,20 @@
     background-size: cover;
   }
 
+  .lib_notice_new {
+    padding-left: 100px;
+  }
+
   .lib_notice_nodata_wrapper {
-    position: relative;
+    position: absolute;
+    top: 45%;
+    left: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 1080px;
     height: 462px;
-    padding-top: 564px;
-    padding-left: 325px;
+    transform: translate(-50%, -50%);
   }
 
   .lib_notice_nodata_wrapper img {
@@ -375,55 +297,54 @@
   }
 
   .lib_notice_nodata_wrapper div {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 40px;
     font-weight: 500;
     font-style: normal;
     line-height: 130%;
     position: absolute;
-    bottom: -200px;
-    left: 335px;
+    bottom: 30px;
     text-align: center;
     letter-spacing: -1px;
     color: #191F28;
   }
 
   .lib_notice_selected_item_swiper {
-    width: 971px;
     height: 1381px;
     padding-top: 100px !important;
-    padding-left: 50px !important;
   }
 
   .lib_notice_selected_item_swiper .swiper-slide img {
     width: 871px;
     height: 1231px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 12px;
+    box-shadow: 40px 10px 40px rgba(0, 0, 0, 0.10);
     object-fit: cover;
   }
 
   .lib_notice_swiper {
     position:relative;
+    width: 100%;
     margin-top: 10px;
   }
 
   .lib_notice_swiper .swiper {
-    width: 970px;
+    width: 920px;
     height: 226px;
-    padding-left: 50px !important;
+    padding-left: 25px !important;
   }
+
 
   .lib_notice_swiper .swiper img {
     width: 124px;
     height: 176px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 4px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.10);
   }
 
   .lib_notice_swiper .swiper-pagination {
     position: absolute;
-    bottom: -53.5px !important;
+    bottom: -54px !important;
     left: 0;
     display: flex !important;
     justify-content: center;
@@ -453,7 +374,7 @@
   }
 
   .lib_notice_ticker_message {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 22px;
     font-weight: 500;
     font-style: normal;
@@ -475,6 +396,664 @@
   }
 }
 
+.lib_information_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 463px;
+  padding-left: 173px;
+  background: url(../img/lib_information_bg.svg) no-repeat top center;
+  background-size: cover;
+  gap: 140px;
+}
+
+.lib_information_content {
+  display: flex;
+  gap: 157px;
+}
+
+.lib_information_index {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 236px;
+  gap: 16px;
+}
+
+.lib_information_index div {
+  display: flex;
+  justify-content: flex-end;
+  width: 267px;
+  height: 130px;
+}
+
+
+.lib_information_index img {
+  position: absolute;
+  top: -30px;
+  right: -34px;
+  width: 137px;
+  height: 61px;
+}
+
+.lib_information_index div div {
+  font-family: 'Pretendard-Bold', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #FFF;
+  border-radius: 50%;
+  background: #191F28;
+}
+
+.lib_information_index_title {
+  font-family: 'Pretendard-Bold', sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  text-align: right;
+  letter-spacing: -1.7px;
+  color: #191F28;
+}
+
+.lib_information_content_title {
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 40px;
+  letter-spacing: -1.5px;
+  color: #191F28;
+}
+
+.lib_information_first_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lib_information_first_table thead tr {
+  display: flex;
+}
+
+.lib_information_first_table tbody tr td,
+.lib_information_first_table thead tr th {
+  width: 500px;
+}
+
+.lib_information_first_table thead tr th {
+  height: 100px;
+}
+
+.lib_information_first_table thead tr th:first-child {
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 0;
+  text-align: center;
+  color: #FFF;
+  border-radius: 20px 0 0 0;
+  background: #309BDF;
+}
+
+.lib_information_first_table thead tr th:nth-child(2) {
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 0;
+  text-align: center;
+  color:  #FFF;
+  background:  #ADB5BD;
+}
+
+.lib_information_first_table thead tr th:nth-child(3) {
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 0;
+  text-align: center;
+  color:  #FFF;
+  border-radius: 0 20px 0 0;
+  background:  #ADB5BD;
+}
+
+.lib_information_first_table tbody tr td {
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 120%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 120px;
+  max-height: 180px;
+  padding: 29px 92px 29px 91px;
+  text-align: center;
+  white-space: nowrap;
+  color:  #191F28;
+  border-top: 1px solid #E5E8EB;
+  border-right: 1px solid #E5E8EB;
+  background: #FFF;
+}
+
+.lib_information_first_table tbody tr:nth-child(3) td:nth-child(1) {
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-weight: 500;
+  border-radius: 0 0 0 20px;
+}
+
+.lib_information_first_table tbody tr:nth-child(3) td:nth-child(3) {
+  border-radius: 0 0 20px 0;
+}
+
+.lib_information_first_table tbody tr:nth-child(3) td:nth-child(2),
+.lib_information_first_table tbody tr:nth-child(3) td:nth-child(3) {
+  height: 180px;
+}
+
+.lib_information_content_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lib_information_content_list_item {
+  display: flex;
+  gap: 20px;
+}
+
+.lib_information_content_list_item img {
+  width: 52px;
+  height: 52px;
+  margin-top: 16px;
+}
+
+.lib_information_content_list_item div {
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%; /* 84px */
+  width: 1428px;
+  letter-spacing: -1.5px;
+  color:#191F28;
+}
+
+.lib_information_second_table {
+  display: flex;
+  flex-direction: column;
+  width: 1500px;
+  margin-bottom: 80px;
+}
+
+.lib_information_second_table_header {
+  display: flex;
+}
+
+.lib_information_second_table_header div:first-child {
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 44px; /* 84.615% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 440px;
+  padding: 28px 0;
+  text-align: center;
+  color:  #FFF;
+  border-radius: 20px 0 0 0;
+  background: #309BDF;
+}
+
+.lib_information_second_table_header div:nth-child(2) {
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  padding: 28px 0;
+  text-align: center;
+  color: #FFF;
+  background: #ADB5BD;
+}
+
+.lib_information_second_table_header div:nth-child(3) {
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  padding: 28px 0;
+  text-align: center;
+  color: #FFF;
+  border-radius: 0 20px 0 0;
+  background: #ADB5BD;
+}
+
+.lib_information_second_table_body {
+  display: flex;
+}
+
+.lib_information_second_table_body div {
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 120%; /* 62.4px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  text-align: center;
+  letter-spacing: -1.3px;
+  color: #191F28;
+  border-top: 1px solid #E5E8EB;
+  border-right: 1px solid #E5E8EB;
+  background-color: #FFFFFF;
+}
+
+.lib_information_second_table_body div:nth-child(1) {
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-weight: 500;
+  width: 440px;
+}
+
+.lib_information_second_table_body div:nth-child(2) {
+  width: 900px;
+}
+
+.lib_information_second_table_body div:nth-child(3) {
+  width: 160px;
+}
+
+.lib_information_second_table_body:nth-child(2) div:nth-child(1),
+.lib_information_second_table_body:nth-child(2) div:nth-child(2),
+.lib_information_second_table_body:nth-child(2) div:nth-child(3){
+  height: 160px
+}
+
+.lib_information_second_table_body:nth-child(6) div:nth-child(1) {
+  height: 160px;border-radius: 0 0 0 20px;
+}
+
+.lib_information_second_table_body:nth-child(6) div:nth-child(2) {
+  height: 160px
+}
+.lib_information_second_table_body:nth-child(6) div:nth-child(3) {
+  height: 160px; border-radius: 0 0 20px 0;
+}
+
+@media (width: 1080px) {
+  .lib_information_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-top: 232px;
+    padding-left: 87px;
+    background: url(../img/lib_information_bg.svg) no-repeat top center;
+    background-size: cover;
+    gap: 70px;
+  }
+
+  .lib_information_content {
+    display: flex;
+    gap: 79px;
+  }
+
+  .lib_information_index {
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 118px;
+    gap: 8px;
+  }
+
+  .lib_information_index div {
+    display: flex;
+    justify-content: flex-end;
+    width: 134px;
+    height: 65px;
+  }
+
+
+  .lib_information_index img {
+    position: absolute;
+    top: -15px;
+    right: -17px;
+    width: 69px;
+    height: 31px;
+  }
+
+  .lib_information_index div div {
+    font-family: 'Pretendard-Bold', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #FFF;
+    border-radius: 50%;
+    background: #191F28;
+  }
+
+  .lib_information_index_title {
+    font-family: 'Pretendard-Bold', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    text-align: right;
+    letter-spacing: -0.85px;
+    color: #191F28;
+  }
+
+  .lib_information_content_title {
+    font-family: "Pretendard-SemiBold", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+    letter-spacing: -0.75px;
+    color: #191F28;
+  }
+
+  .lib_information_first_table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .lib_information_first_table thead tr {
+    display: flex;
+  }
+
+  .lib_information_first_table thead tr th {
+    height: 50px;
+  }
+
+
+  .lib_information_first_table tbody tr td,
+  .lib_information_first_table thead tr th {
+    width: 250px;
+  }
+
+  .lib_information_first_table thead tr th:first-child {
+    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    text-align: center;
+    color: #FFF;
+    border-radius: 10px 0 0 0;
+    background: #309BDF;
+  }
+
+  .lib_information_first_table thead tr th:nth-child(2) {
+    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 0;
+    text-align: center;
+    color:  #FFF;
+    background:  #ADB5BD;
+  }
+
+  .lib_information_first_table thead tr th:nth-child(3) {
+    font-family: 'Pretendard-Medium', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    text-align: center;
+    color:  #FFF;
+    border-radius: 0 10px 0 0;
+    background:  #ADB5BD;
+  }
+
+  .lib_information_first_table tbody tr td {
+    font-family: "Pretendard-Regular", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 60px;
+    max-height: 90px;
+    padding: 15px 46px 15px 46px;
+    text-align: center;
+    white-space: nowrap;
+    color:  #191F28;
+    border-top: 1px solid #E5E8EB;
+    border-right: 1px solid #E5E8EB;
+    background: #FFF;
+  }
+
+  .lib_information_first_table tbody tr:nth-child(3) td:nth-child(1) {
+    font-family: 'Pretendard-Medium', sans-serif;
+    font-weight: 500;
+    border-radius: 0 0 0 10px;
+  }
+
+  .lib_information_first_table tbody tr:nth-child(3) td:nth-child(3) {
+    border-radius: 0 0 10px 0;
+  }
+
+  .lib_information_first_table tbody tr:nth-child(3) td:nth-child(2),
+  .lib_information_first_table tbody tr:nth-child(3) td:nth-child(3) {
+    height: 90px;
+  }
+
+  .lib_information_content_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lib_information_content_list_item {
+    display: flex;
+    gap: 10px;
+  }
+
+  .lib_information_content_list_item img {
+    width: 26px;
+    height: 26px;
+    margin-top: 8px;
+  }
+
+  .lib_information_content_list_item div {
+    font-family: "Pretendard-Regular", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%; /* 84px */
+    width: 718px;
+    letter-spacing: -0.75px;
+    color:#191F28;
+  }
+
+  .lib_information_second_table {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    margin-bottom: 40px;
+  }
+
+  .lib_information_second_table_header {
+    display: flex;
+  }
+
+  .lib_information_second_table_header div:first-child {
+    font-family: 'Pretendard-Medium', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 22px; /* 84.615% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 50px;
+    padding: 14px 0;
+    text-align: center;
+    color:  #FFF;
+    border-radius: 10px 0 0 0;
+    background: #309BDF;
+  }
+
+  .lib_information_second_table_header div:nth-child(2) {
+    font-family: 'Pretendard-Medium', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 50px;
+    padding: 14px 0;
+    text-align: center;
+    color: #FFF;
+    background: #ADB5BD;
+  }
+
+  .lib_information_second_table_header div:nth-child(3) {
+    font-family: 'Pretendard-Medium', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    padding: 14px 0;
+    text-align: center;
+    color: #FFF;
+    border-radius: 0 10px 0 0;
+    background: #ADB5BD;
+  }
+
+  .lib_information_second_table_body {
+    display: flex;
+  }
+
+  .lib_information_second_table_body div {
+    font-family: "Pretendard-Regular", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%; /* 62.4px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    text-align: center;
+    letter-spacing: -0.65px;
+    color: #191F28;
+    border-top: 1px solid #E5E8EB;
+    border-right: 1px solid #E5E8EB;
+    background-color: #FFFFFF;
+  }
+
+
+  .lib_information_second_table_body:nth-child(2) div:nth-child(1),
+  .lib_information_second_table_body:nth-child(2) div:nth-child(2),
+  .lib_information_second_table_body:nth-child(2) div:nth-child(3){
+    height: 80px
+  }
+
+  .lib_information_second_table_body:nth-child(6) div:nth-child(1) {
+    height: 80px; border-radius: 0 0 0 10px;
+  }
+
+  .lib_information_second_table_body:nth-child(6) div:nth-child(2) {
+    height: 80px
+  }
+  .lib_information_second_table_body:nth-child(6) div:nth-child(3) {
+    height: 80px; border-radius: 0 0 10px 0;
+  }
+
+  .lib_information_second_table_body div:nth-child(1) {
+    font-family: 'Pretendard-Medium', sans-serif;
+    font-weight: 500;
+    width: 220px;
+  }
+
+  .lib_information_second_table_body div:nth-child(2) {
+    width: 450px;
+  }
+
+  .lib_information_second_table_body div:nth-child(3) {
+    width: 80px;
+  }
+
+
+}
+
 /* 라이브러리보드 시설안내 */
 .lib_facility_container {
   width: 100%;
@@ -486,14 +1065,14 @@
 
 .lib_facility_map {
   position: relative;
-  width: 1800px;
-  height: 1036px;
-  margin-left: 180px;
+  width: 1860px;
+  height: 1070px;
+  margin-left: 160px;
 }
 
 .lib_facility_map img {
-  width: 1800px;
-  height: 1036px;
+  width: 1860px;
+  height: 1070px;
   object-fit: contain;
 }
 
@@ -518,7 +1097,7 @@
 }
 
 .lib_facility_switch {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-SemiBold", sans-serif;
   font-size: 48px;
   font-weight: 600;
   font-style: normal;
@@ -601,7 +1180,7 @@
 }
 
 .lib_facility_title_kr {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-SemiBold", sans-serif;
   font-size: 80px;
   font-weight: 600;
   font-style: normal;
@@ -621,7 +1200,7 @@
 
 .lib_facility_img {
   width: 1700px;
-  height: 303px;
+  height: 1000px;
   margin-top: 34px;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -648,7 +1227,7 @@
 }
 
 .lib_facility_list_item div {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 60px;
   font-weight: 500;
   font-style: normal;
@@ -669,14 +1248,14 @@
 
   .lib_facility_map {
     position: relative;
-    width: 900px;
-    height: 518px;
-    margin-left: 90px;
+    width: 930px;
+    height: 535px;
+    margin-left: 80px;
   }
 
   .lib_facility_map img {
-    width: 900px;
-    height: 518px;
+    width: 930px;
+    height: 535px;
     object-fit: contain;
   }
 
@@ -701,7 +1280,7 @@
   }
 
   .lib_facility_switch {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-SemiBold", sans-serif;
     font-size: 24px;
     font-weight: 600;
     font-style: normal;
@@ -784,7 +1363,7 @@
   }
 
   .lib_facility_title_kr {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-SemiBold", sans-serif;
     font-size: 40px;
     font-weight: 600;
     font-style: normal;
@@ -804,7 +1383,7 @@
 
   .lib_facility_img {
     width: 850px;
-    height: 152px;
+    height: 500px;
     margin-top: 17px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -831,7 +1410,7 @@
   }
 
   .lib_facility_list_item div {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -857,7 +1436,7 @@
   align-items: center;
   width: 2160px;
   height: 924px;
-  padding-top: 1128px;
+  padding-top: 1300px;
   padding-left: 690px;
 }
 
@@ -867,14 +1446,14 @@
 }
 
 .lib_new_nodata_wrapper div {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 80px;
   font-weight: 500;
   font-style: normal;
   line-height: 130%;
   position: absolute;
   bottom: -400px;
-  left: 730px;
+  left: 739px;
   text-align: center;
   letter-spacing: -2px;
   color: #191F28;
@@ -926,7 +1505,7 @@
 }
 
 .lib_new_writer {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 60px;
   font-weight: 500;
   font-style: normal;
@@ -942,11 +1521,12 @@
 }
 
 .lib_new_writer span {
+  font-family: 'Pretendard-Medium', sans-serif;
   color: #191F28;
 }
 
 .lib_new_title {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-SemiBold", sans-serif;
   font-size: 120px;
   font-weight: 600;
   font-style: normal;
@@ -962,7 +1542,7 @@
 }
 
 .lib_new_summary {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 60px;
   font-weight: 500;
   font-style: normal;
@@ -1014,7 +1594,7 @@
     align-items: center;
     width: 1080px;
     height: 462px;
-    padding-top: 564px;
+    padding-top: 650px;
     padding-left: 345px;
   }
 
@@ -1024,14 +1604,14 @@
   }
 
   .lib_new_nodata_wrapper div {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 40px;
     font-weight: 500;
     font-style: normal;
     line-height: 130%;
     position: absolute;
     bottom: -200px;
-    left: 365px;
+    left: 370px;
     text-align: center;
     letter-spacing: -1px;
     color: #191F28;
@@ -1083,7 +1663,7 @@
   }
 
   .lib_new_writer {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -1099,11 +1679,12 @@
   }
 
   .lib_new_writer span {
+    font-family: 'Pretendard-Medium', sans-serif;
     color: #191F28;
   }
 
   .lib_new_title {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-SemiBold", sans-serif;
     font-size: 60px;
     font-weight: 600;
     font-style: normal;
@@ -1119,7 +1700,7 @@
   }
 
   .lib_new_summary {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -1159,21 +1740,24 @@
 
 /* 라이브러리보드 인기도서 */
 .lib_best_container {
+  position: relative;
   width: 100%;
   height: 100vh;
-  padding-top: 439px;
+  padding-top: 440px;
   background: url(../img/lib_best_bg.svg) no-repeat top center;
   background-size: cover;
 }
 
 .lib_best_nodata_wrapper {
-  position: relative;
+  position: absolute;
+  top: 45%;
+  left: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 2160px;
   height: 924px;
-  padding-top: 1128px;
-  padding-left: 690px;
+  transform: translate(-50%, -50%);
 }
 
 .lib_best_nodata_wrapper img {
@@ -1182,14 +1766,13 @@
 }
 
 .lib_best_nodata_wrapper div {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 80px;
   font-weight: 500;
   font-style: normal;
   line-height: 130%;
   position: absolute;
-  bottom: -400px;
-  left: 730px;
+  bottom: 100px;
   text-align: center;
   letter-spacing: -2px;
   color: #191F28;
@@ -1204,14 +1787,14 @@
 .lib_best_swiper .swiper {
   width: 2160px;
   height: 2914px;
-  padding-top: 55px !important;
+  padding-top: 90px !important;
   padding-left: 180px !important;
 }
 
 .lib_best_swiper .swiper-slide {
   display: flex !important;
   flex-wrap: wrap;
-  row-gap: 330px;
+  row-gap: 260px;
 }
 
 .lib_best_swiper .swiper-pagination {
@@ -1240,7 +1823,7 @@
 }
 
 .lib_best_ranking {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-SemiBold", sans-serif;
   font-size: 52px;
   font-weight: 600;
   font-style: normal;
@@ -1255,6 +1838,7 @@
   height: 160px;
   padding: 49px 41px 49px 42px;
   text-align: center;
+  white-space: nowrap;
   letter-spacing: -1.3px;
   text-transform: capitalize;
   color: #FFF;
@@ -1266,13 +1850,13 @@
 .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_ranking,
 .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_ranking,
 .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_ranking {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-SemiBold", sans-serif;
   font-size: 60px;
   font-weight: 600;
   font-style: normal;
   line-height: normal;
   position: absolute;
-  top: -54px;
+  top: -90px;
   left: 310px;
   display: inline-flex;
   align-items: center;
@@ -1281,6 +1865,7 @@
   height: 180px;
   padding: 54px 51px;
   text-align: center;
+  white-space: nowrap;
   letter-spacing: -1.5px;
   text-transform: capitalize;
   color: #FFF;
@@ -1299,7 +1884,7 @@
 .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_title,
 .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_title,
 .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_title {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 60px;
   font-weight: 500;
   font-style: normal;
@@ -1319,7 +1904,7 @@
 .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_writer,
 .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_writer,
 .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_writer {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
   font-size: 48px;
   font-weight: 400;
   font-style: normal;
@@ -1371,7 +1956,7 @@
 }
 
 .lib_best_title {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 60px;
   font-weight: 500;
   font-style: normal;
@@ -1388,7 +1973,7 @@
 }
 
 .lib_best_writer {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
   font-size: 48px;
   font-weight: 400;
   font-style: normal;
@@ -1404,7 +1989,7 @@
 }
 
 .lib_best_year {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
   font-size: 48px;
   font-weight: 400;
   font-style: normal;
@@ -1416,6 +2001,7 @@
 
 @media (width: 1080px) {
   .lib_best_container {
+    position: relative;
     width: 100%;
     height: 100vh;
     padding-top: 220px;
@@ -1424,13 +2010,15 @@
   }
 
   .lib_best_nodata_wrapper {
-    position: relative;
+    position: absolute;
+    top: 45%;
+    left: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 1080px;
     height: 462px;
-    padding-top: 564px;
-    padding-left: 345px;
+    transform: translate(-50%, -50%);
   }
 
   .lib_best_nodata_wrapper img {
@@ -1439,14 +2027,13 @@
   }
 
   .lib_best_nodata_wrapper div {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 40px;
     font-weight: 500;
     font-style: normal;
     line-height: 130%;
     position: absolute;
-    bottom: -200px;
-    left: 365px;
+    bottom: 50px;
     text-align: center;
     letter-spacing: -1px;
     color: #191F28;
@@ -1461,14 +2048,14 @@
   .lib_best_swiper .swiper {
     width: 1080px;
     height: 1457px;
-    padding-top: 28px !important;
+    padding-top: 45px !important;
     padding-left: 90px !important;
   }
 
   .lib_best_swiper .swiper-slide {
     display: flex !important;
     flex-wrap: wrap;
-    row-gap: 165px;
+    row-gap: 130px;
   }
 
   .lib_best_swiper .swiper-pagination {
@@ -1497,7 +2084,7 @@
   }
 
   .lib_best_ranking {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-SemiBold", sans-serif;
     font-size: 26px;
     font-weight: 600;
     font-style: normal;
@@ -1512,6 +2099,7 @@
     height: 80px;
     padding: 25px 21px 25px 21px;
     text-align: center;
+    white-space: nowrap;
     letter-spacing: -0.65px;
     text-transform: capitalize;
     color: #FFF;
@@ -1523,13 +2111,13 @@
   .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_ranking,
   .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_ranking,
   .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_ranking {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-SemiBold", sans-serif;
     font-size: 30px;
     font-weight: 600;
     font-style: normal;
     line-height: normal;
     position: absolute;
-    top: -27px;
+    top: -45px;
     left: 155px;
     display: inline-flex;
     align-items: center;
@@ -1538,6 +2126,7 @@
     height: 90px;
     padding: 27px 25.5px;
     text-align: center;
+    white-space: nowrap;
     letter-spacing: -0.75px;
     text-transform: capitalize;
     color: #FFF;
@@ -1556,7 +2145,7 @@
   .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_title,
   .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_title,
   .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_title {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -1576,7 +2165,7 @@
   .lib_best_swiper .swiper-slide:first-child .swiper-item:nth-child(2) .lib_best_writer,
   .lib_best_swiper .swiper-slide:last-child .swiper-item:first-child .lib_best_writer,
   .lib_best_swiper .swiper-slide:last-child .swiper-item:nth-child(2) .lib_best_writer {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-Regular", sans-serif;
     font-size: 24px;
     font-weight: 400;
     font-style: normal;
@@ -1628,7 +2217,7 @@
   }
 
   .lib_best_title {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -1645,7 +2234,7 @@
   }
 
   .lib_best_writer {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-Regular", sans-serif;
     font-size: 24px;
     font-weight: 400;
     font-style: normal;
@@ -1661,7 +2250,7 @@
   }
 
   .lib_best_year {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-Regular", sans-serif;
     font-size: 24px;
     font-weight: 400;
     font-style: normal;
@@ -1671,6 +2260,260 @@
     color: #4E5968;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#l_librarian_book {
+  position: relative;
+  height: 100vh;
+  background: url('../img/lib_librarian_bg.svg') center center no-repeat;
+  background-size: cover;
+}
+
+.l_new_wrap .l_books_swiper {
+  width: 1970px;
+  margin-left: 200px;
+  padding: 440px 0 0 0;
+}
+
+.l_new_wrap .slider {
+  margin: 0 auto;
+  padding-top: 0px;
+}
+
+.l_new_wrap .swiper .swiper-wrapper .swiper-slide {
+  display: grid !important;
+  /* justify-items: center; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 120px;
+}
+
+.l_new_wrap .l_grid_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+
+.l_new_wrap .l_grid_item img {
+  display: inline-block;
+  width: 440px;
+  height: 634px;
+  margin-bottom: 40px;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(25, 33, 61, 0.2);
+  box-shadow: 20px 20px 40px 0px rgba(154, 196, 224, 0.40);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.l_new_wrap .book_title {
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  display: block;
+  overflow: hidden;
+  width: 440px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  letter-spacing: -1.5px;
+  text-overflow: ellipsis;
+  color: #191f28;
+}
+
+.l_new_wrap .name {
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  display: block;
+  overflow: hidden;
+  width: 440px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  letter-spacing: -1.2px;
+  text-overflow: ellipsis;
+  color: #6b7684;
+}
+
+.l_new_wrap .name:last-child {
+  font-family: 'Pretendard-Regular', sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.l_new_wrap .name span {
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  display: inline-block;
+  margin-left: 8px;
+  letter-spacing: -1px;
+  color: #6b7684;
+}
+
+.l_new_wrap .swiper-pagination {
+  bottom: 236px !important;
+}
+
+.l_new_wrap .swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  margin: 0 14px !important;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: #ADB5BD;
+}
+
+.l_new_wrap .swiper-pagination-bullet-active {
+  width: 24px;
+  height: 24px;
+  background-color: #333D4B;
+}
+
+
+
+@media (width: 1080px) {
+  #l_librarian_book {
+    position: relative;
+    height: 100vh;
+    background: url('../img/lib_librarian_bg.svg') center center no-repeat;
+    background-size: cover;
+  }
+
+  .l_new_wrap .l_books_swiper {
+    width: 985px;
+    margin-left: 100px;
+    padding: 220px 0 0 0;
+  }
+
+  .l_new_wrap .slider {
+    margin: 0 auto;
+    padding-top: 0px;
+  }
+
+  .l_new_wrap .swiper .swiper-wrapper .swiper-slide {
+    display: grid !important;
+    /* justify-items: center; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 60px;
+  }
+
+  .l_new_wrap .l_grid_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+  }
+
+  .l_new_wrap .l_grid_item img {
+    display: inline-block;
+    width: 220px;
+    height: 317px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0 5px 15px 0 rgba(25, 33, 61, 0.2);
+    box-shadow: 10px 10px 20px 0px rgba(154, 196, 224, 0.40);
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .l_new_wrap .book_title {
+    font-family: 'Pretendard-Medium', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    display: block;
+    overflow: hidden;
+    width: 220px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    letter-spacing: -1.5px;
+    text-overflow: ellipsis;
+    color: #191f28;
+  }
+
+  .l_new_wrap .name {
+    font-family: 'Pretendard-Medium', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    display: block;
+    overflow: hidden;
+    width: 220px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    letter-spacing: -0.6px;
+    text-overflow: ellipsis;
+    color: #6b7684;
+  }
+
+  .l_new_wrap .name:last-child {
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  .l_new_wrap .name span {
+    font-family: "Pretendard-Regular", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    display: inline-block;
+    margin-left: 8px;
+    letter-spacing: -1px;
+    color: #6b7684;
+  }
+
+  .l_new_wrap .swiper-pagination {
+    bottom: 118px !important;
+  }
+
+  .l_new_wrap .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 7px !important;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: #ADB5BD;
+  }
+
+  .l_new_wrap .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background-color: #333D4B;
+  }
+}
+
+
+
+
+
 
 /* 라이브러리보드 사서추천 */
 .lib_librarian_container {
@@ -1688,7 +2531,7 @@
   align-items: center;
   width: 2160px;
   height: 924px;
-  padding-top: 1128px;
+  padding-top: 1300px;
   padding-left: 490px;
 }
 
@@ -1698,14 +2541,14 @@
 }
 
 .lib_librarian_nodata_wrapper div {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 80px;
   font-weight: 500;
   font-style: normal;
   line-height: 130%;
   position: absolute;
   bottom: -400px;
-  left: 530px;
+  left: 540px;
   text-align: center;
   letter-spacing: -2px;
   color: #191F28;
@@ -1751,7 +2594,7 @@
 }
 
 .lib_librarian_title {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 60px;
   font-weight: 500;
   font-style: normal;
@@ -1768,9 +2611,9 @@
 }
 
 .lib_librarian_writer {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   overflow: hidden;
   width: 440px;
@@ -1783,7 +2626,7 @@
 }
 
 .lib_librarian_year {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
   font-size: 48px;
   font-weight: 400;
   font-style: normal;
@@ -1809,7 +2652,7 @@
     align-items: center;
     width: 1080px;
     height: 462px;
-    padding-top: 564px;
+    padding-top: 650px;
     padding-left: 245px;
   }
 
@@ -1819,14 +2662,14 @@
   }
 
   .lib_librarian_nodata_wrapper div {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 40px;
     font-weight: 500;
     font-style: normal;
     line-height: 130%;
     position: absolute;
     bottom: -200px;
-    left: 265px;
+    left: 270px;
     text-align: center;
     letter-spacing: -1px;
     color: #191F28;
@@ -1873,7 +2716,7 @@
   }
 
   .lib_librarian_title {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -1890,9 +2733,9 @@
   }
 
   .lib_librarian_writer {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-Regular", sans-serif;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     overflow: hidden;
     width: 220px;
@@ -1905,7 +2748,7 @@
   }
 
   .lib_librarian_year {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-Regular", sans-serif;
     font-size: 24px;
     font-weight: 400;
     font-style: normal;
@@ -1943,7 +2786,7 @@
 }
 
 .lib_event_nodata_wrapper div {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 80px;
   font-weight: 500;
   font-style: normal;
@@ -2009,7 +2852,7 @@
 }
 
 .lib_event_label {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-SemiBold", sans-serif;
   font-size: 60px;
   font-weight: 600;
   font-style: normal;
@@ -2021,7 +2864,7 @@
 }
 
 .lib_event_value {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-SemiBold", sans-serif;
   font-size: 92px;
   font-weight: 600;
   font-style: normal;
@@ -2032,7 +2875,7 @@
 }
 
 .lib_event_title {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-SemiBold", sans-serif;
   font-size: 240px;
   font-weight: 600;
   font-style: normal;
@@ -2076,7 +2919,7 @@
   }
 
   .lib_event_nodata_wrapper div {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 40px;
     font-weight: 500;
     font-style: normal;
@@ -2142,7 +2985,7 @@
   }
 
   .lib_event_label {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-SemiBold", sans-serif;
     font-size: 30px;
     font-weight: 600;
     font-style: normal;
@@ -2154,7 +2997,7 @@
   }
 
   .lib_event_value {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-SemiBold", sans-serif;
     font-size: 46px;
     font-weight: 600;
     font-style: normal;
@@ -2165,7 +3008,7 @@
   }
 
   .lib_event_title {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-SemiBold", sans-serif;
     font-size: 120px;
     font-weight: 600;
     font-style: normal;
@@ -2299,7 +3142,7 @@
 }
 
 .lib_living_date {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 60px;
   font-weight: 500;
   font-style: normal;
@@ -2308,7 +3151,7 @@
 }
 
 .lib_living_weather {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-SemiBold", sans-serif;
   font-size: 60px;
   font-weight: 600;
   font-style: normal;
@@ -2340,7 +3183,7 @@
 }
 
 .lib_living_perceived_temperature {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 60px;
   font-weight: 500;
   font-style: normal;
@@ -2372,7 +3215,7 @@
 }
 
 .lib_living_label {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
   font-size: 60px;
   font-weight: 400;
   font-style: normal;
@@ -2389,7 +3232,7 @@
 }
 
 .lib_living_value {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
   font-size: 60px;
   font-weight: 400;
   font-style: normal;
@@ -2417,7 +3260,7 @@
 }
 
 .lib_living_weather_list_date {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
   font-size: 48px;
   font-weight: 400;
   font-style: normal;
@@ -2461,7 +3304,7 @@
 }
 
 .lib_living_news_list_title div {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-SemiBold", sans-serif;
   font-size: 48px;
   font-weight: 600;
   font-style: normal;
@@ -2497,7 +3340,7 @@
 }
 
 .lib_living_news_dot {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 60px;
   font-weight: 500;
   font-style: normal;
@@ -2509,7 +3352,7 @@
 }
 
 .lib_living_news_title {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard-Medium', sans-serif;
   font-size: 60px;
   font-weight: 500;
   font-style: normal;
@@ -2523,7 +3366,7 @@
 }
 
 .lib_living_news_date {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
   font-size: 40px;
   font-weight: 400;
   font-style: normal;
@@ -2549,7 +3392,7 @@
   }
 
   .lib_living_date {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -2558,7 +3401,7 @@
   }
 
   .lib_living_weather {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-SemiBold", sans-serif;
     font-size: 30px;
     font-weight: 600;
     font-style: normal;
@@ -2590,7 +3433,7 @@
   }
 
   .lib_living_perceived_temperature {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -2622,7 +3465,7 @@
   }
 
   .lib_living_label {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-Regular", sans-serif;
     font-size: 30px;
     font-weight: 400;
     font-style: normal;
@@ -2639,7 +3482,7 @@
   }
 
   .lib_living_value {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-Regular", sans-serif;
     font-size: 30px;
     font-weight: 400;
     font-style: normal;
@@ -2667,7 +3510,7 @@
   }
 
   .lib_living_weather_list_date {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-Regular", sans-serif;
     font-size: 24px;
     font-weight: 400;
     font-style: normal;
@@ -2711,7 +3554,7 @@
   }
 
   .lib_living_news_list_title div {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-SemiBold", sans-serif;
     font-size: 24px;
     font-weight: 600;
     font-style: normal;
@@ -2747,7 +3590,7 @@
   }
 
   .lib_living_news_dot {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -2759,7 +3602,7 @@
   }
 
   .lib_living_news_title {
-    font-family: "Pretendard", sans-serif;
+    font-family: 'Pretendard-Medium', sans-serif;
     font-size: 30px;
     font-weight: 500;
     font-style: normal;
@@ -2773,7 +3616,7 @@
   }
 
   .lib_living_news_date {
-    font-family: "Pretendard", sans-serif;
+    font-family: "Pretendard-Regular", sans-serif;
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
